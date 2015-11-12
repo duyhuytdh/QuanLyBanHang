@@ -1,0 +1,256 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Hoang
+</name>
+</assembly>
+<members>
+<member name="T:Hoang.QuanLyBanHangDataSet.tblBANDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblBAOCAODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblCTNHAPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHANGBANDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHDBANDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHoaDon_TamDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblKHACHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblMATHANGDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNCCDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNHAPKHODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNHOMMHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblPasswordDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblBANRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblBAOCAORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblCTNHAPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHANGBANRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHDBANRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHoaDon_TamRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblKHACHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblMATHANGRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNCCRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNHAPKHORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNHOMMHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblPasswordRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblBANRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblBAOCAORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblCTNHAPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHANGBANRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHDBANRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblHoaDon_TamRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblKHACHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblMATHANGRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNCCRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNHAPKHORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblNHOMMHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet.tblPasswordRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblBANTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblBAOCAOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblCTNHAPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblHANGBANTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblHDBANTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblHoaDon_TamTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblKHACHTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblMATHANGTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblNCCTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblNHAPKHOTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblNHOMMHTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.tblPasswordTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Hoang.QuanLyBanHangDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Hoang.QuanLyBanHangDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Hoang.QuanLyBanHangDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager.UpdateAll(Hoang.QuanLyBanHangDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Hoang.QuanLyBanHangDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Hoang.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Hoang.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Hoang.My.Resources.Resources.login">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Hoang.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

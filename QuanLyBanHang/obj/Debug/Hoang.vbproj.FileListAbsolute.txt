@@ -1,0 +1,80 @@
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.exe.config
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.exe
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.pdb
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.xml
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\CrystalDecisions.Shared.dll
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\CrystalDecisions.Web.dll
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\CrystalDecisions.Windows.Forms.dll
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmBanHang2.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmBANHANG.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmBAOCAO.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmChangepass.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmCTNHAP.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmCTXUAT.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmFlash.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmKhach.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmLogin.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmMain.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmMathang.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNCC.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNhanvien.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNHOMMH.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNUOC.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmThemNSD.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmTTSP.resources
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.vbproj.GenerateResource.Cache
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.exe
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.xml
+C:\Users\Duy Huy\Desktop\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.pdb
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.exe.config
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.exe
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.xml
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.pdb
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.exe
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.pdb
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\bin\Hoang.xml
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.vbprojResolveAssemblyReference.cache
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmBanHang2.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmBANHANG.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmBAOCAO.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmChangepass.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmCTNHAP.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmCTXUAT.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmFlash.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmKhach.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmLogin.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmMain.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmMathang.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNCC.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNhanvien.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNHOMMH.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmNUOC.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmThemNSD.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.frmTTSP.resources
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.vbproj.GenerateResource.Cache
+E:\hỗ trợ ra quyết định\thầy sơn\ctim_DoAn_Hoang_VBNET2\DoAn_Hoang_VBNET2\obj\Debug\Hoang.Resources.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\bin\Hoang.exe.config
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.exe
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.xml
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.pdb
+D:\QuanLyBanHang\trunk\QuanLyBanHang\bin\Hoang.exe
+D:\QuanLyBanHang\trunk\QuanLyBanHang\bin\Hoang.pdb
+D:\QuanLyBanHang\trunk\QuanLyBanHang\bin\Hoang.xml
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.vbprojResolveAssemblyReference.cache
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmBanHang2.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmBANHANG.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmChangepass.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmCTNHAP.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmCTXUAT.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmKhach.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmLogin.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmMain.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmMathang.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmNCC.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmNHOMMH.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmThemNSD.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.frmTTSP.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.Resources.resources
+D:\QuanLyBanHang\trunk\QuanLyBanHang\obj\Debug\Hoang.vbproj.GenerateResource.Cache
