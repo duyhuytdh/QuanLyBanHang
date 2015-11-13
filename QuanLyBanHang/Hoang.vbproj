@@ -23,7 +23,7 @@
     <OptionExplicit>On</OptionExplicit>
     <OptionStrict>Off</OptionStrict>
     <RootNamespace>Hoang</RootNamespace>
-    <StartupObject>Hoang.frmLogin</StartupObject>
+    <StartupObject>Hoang.frmMain</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
@@ -123,6 +123,11 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HOANGDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOANGDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -184,6 +189,17 @@
     <Compile Include="mdStart.vb">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="HOANGDataSet.xsc">
+      <DependentUpon>HOANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HOANGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HOANGDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HOANGDataSet.xss">
+      <DependentUpon>HOANGDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\13363508121722379311_574_574.jpg" />
     <None Include="Resources\1458626_617099768348382_165194338_n.jpg" />
     <None Include="QuanLyBanHangDataSet.xsc">

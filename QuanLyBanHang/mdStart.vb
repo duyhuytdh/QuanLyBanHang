@@ -9,7 +9,7 @@ Module mdStart
     Public power As String = ""
 
     Public Sub Main()
-        strconn = "Data Source=HUONGHILL-PC\SQLEXPRESS2012;Initial Catalog=QuanLyBanHang;Persist Security Info=True;User ID=sa;Password=sa"
+        strconn = "Data Source=DuyHuy-PC\SQLEXPRESS2008R2;Initial Catalog=HOANG;User ID=sa;Password=sa"
     End Sub
 
     'ham kiem tra xem ma nhap vao da ton tai chua , neu ton tai roi thi bao loi

@@ -9,7 +9,6 @@ Public Class frmCTNHAP
 
     Public Sub New()
         MyBase.New()
-
         'This call is required by the Windows Form Designer.
         InitializeComponent()
 
@@ -80,11 +79,9 @@ Public Class frmCTNHAP
     Friend WithEvents txtTONGTIEN As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtNO As System.Windows.Forms.TextBox
-    Friend WithEvents cbNV As System.Windows.Forms.ComboBox
     Friend WithEvents lbID As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtSOCTN As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents cbMH As System.Windows.Forms.ComboBox
@@ -117,7 +114,6 @@ Public Class frmCTNHAP
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cbNCC = New System.Windows.Forms.ComboBox()
-        Me.cbNV = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnHuyCTN = New System.Windows.Forms.Button()
         Me.CheckBox = New System.Windows.Forms.CheckBox()
@@ -131,7 +127,6 @@ Public Class frmCTNHAP
         Me.txtTONGTIEN = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNgayN = New System.Windows.Forms.TextBox()
         Me.txtSOCTN = New System.Windows.Forms.TextBox()
@@ -186,7 +181,6 @@ Public Class frmCTNHAP
         Me.Grb1.Controls.Add(Me.PictureBox3)
         Me.Grb1.Controls.Add(Me.PictureBox1)
         Me.Grb1.Controls.Add(Me.cbNCC)
-        Me.Grb1.Controls.Add(Me.cbNV)
         Me.Grb1.Controls.Add(Me.Label9)
         Me.Grb1.Controls.Add(Me.btnHuyCTN)
         Me.Grb1.Controls.Add(Me.CheckBox)
@@ -200,7 +194,6 @@ Public Class frmCTNHAP
         Me.Grb1.Controls.Add(Me.txtTONGTIEN)
         Me.Grb1.Controls.Add(Me.Label8)
         Me.Grb1.Controls.Add(Me.Label4)
-        Me.Grb1.Controls.Add(Me.Label3)
         Me.Grb1.Controls.Add(Me.Label2)
         Me.Grb1.Controls.Add(Me.txtNgayN)
         Me.Grb1.Controls.Add(Me.txtSOCTN)
@@ -210,45 +203,45 @@ Public Class frmCTNHAP
         Me.Grb1.Controls.Add(Me.cmdNew)
         Me.Grb1.Controls.Add(Me.cmdBack)
         Me.Grb1.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Grb1.Location = New System.Drawing.Point(0, 10)
+        Me.Grb1.Location = New System.Drawing.Point(6, 0)
         Me.Grb1.Name = "Grb1"
-        Me.Grb1.Size = New System.Drawing.Size(998, 576)
+        Me.Grb1.Size = New System.Drawing.Size(776, 451)
         Me.Grb1.TabIndex = 4
         Me.Grb1.TabStop = False
         '
         'btnHoanThanh
         '
         Me.btnHoanThanh.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHoanThanh.Location = New System.Drawing.Point(41, 495)
+        Me.btnHoanThanh.Location = New System.Drawing.Point(32, 396)
         Me.btnHoanThanh.Name = "btnHoanThanh"
-        Me.btnHoanThanh.Size = New System.Drawing.Size(154, 54)
+        Me.btnHoanThanh.Size = New System.Drawing.Size(120, 43)
         Me.btnHoanThanh.TabIndex = 51
         Me.btnHoanThanh.Text = "Hoàn Thành Nhập"
         '
         'btnXoaMH
         '
         Me.btnXoaMH.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnXoaMH.Location = New System.Drawing.Point(41, 391)
+        Me.btnXoaMH.Location = New System.Drawing.Point(32, 313)
         Me.btnXoaMH.Name = "btnXoaMH"
-        Me.btnXoaMH.Size = New System.Drawing.Size(154, 29)
+        Me.btnXoaMH.Size = New System.Drawing.Size(120, 23)
         Me.btnXoaMH.TabIndex = 50
         Me.btnXoaMH.Text = "Xoá Mặt Hàng"
         '
         'btnThemMH
         '
         Me.btnThemMH.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnThemMH.Location = New System.Drawing.Point(41, 440)
+        Me.btnThemMH.Location = New System.Drawing.Point(32, 352)
         Me.btnThemMH.Name = "btnThemMH"
-        Me.btnThemMH.Size = New System.Drawing.Size(154, 29)
+        Me.btnThemMH.Size = New System.Drawing.Size(120, 23)
         Me.btnThemMH.TabIndex = 49
         Me.btnThemMH.Text = "Thêm Mặt Hàng"
         '
         'cmDong
         '
         Me.cmDong.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmDong.Location = New System.Drawing.Point(864, 512)
+        Me.cmDong.Location = New System.Drawing.Point(672, 410)
         Me.cmDong.Name = "cmDong"
-        Me.cmDong.Size = New System.Drawing.Size(110, 30)
+        Me.cmDong.Size = New System.Drawing.Size(86, 24)
         Me.cmDong.TabIndex = 48
         Me.cmDong.Text = "Đóng"
         '
@@ -263,9 +256,9 @@ Public Class frmCTNHAP
         Me.GroupBox1.Controls.Add(Me.txtThanhTien)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 61)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 49)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(369, 212)
+        Me.GroupBox1.Size = New System.Drawing.Size(287, 169)
         Me.GroupBox1.TabIndex = 47
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Nhập Thông Tin Cho Mặt Hàng"
@@ -273,70 +266,70 @@ Public Class frmCTNHAP
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(26, 28)
+        Me.Label5.Location = New System.Drawing.Point(20, 22)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(123, 22)
+        Me.Label5.Size = New System.Drawing.Size(96, 18)
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Mã Mặt Hàng"
         '
         'cbMH
         '
         Me.cbMH.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbMH.ItemHeight = 18
-        Me.cbMH.Location = New System.Drawing.Point(31, 55)
+        Me.cbMH.ItemHeight = 16
+        Me.cbMH.Location = New System.Drawing.Point(24, 44)
         Me.cbMH.Name = "cbMH"
-        Me.cbMH.Size = New System.Drawing.Size(313, 26)
+        Me.cbMH.Size = New System.Drawing.Size(244, 24)
         Me.cbMH.Sorted = True
         Me.cbMH.TabIndex = 4
         '
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(26, 96)
+        Me.Label6.Location = New System.Drawing.Point(20, 77)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(92, 29)
+        Me.Label6.Size = New System.Drawing.Size(84, 23)
         Me.Label6.TabIndex = 19
         Me.Label6.Text = "Số Lượng"
         '
         'txtSL
         '
         Me.txtSL.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSL.Location = New System.Drawing.Point(171, 93)
+        Me.txtSL.Location = New System.Drawing.Point(133, 74)
         Me.txtSL.Name = "txtSL"
-        Me.txtSL.Size = New System.Drawing.Size(173, 27)
+        Me.txtSL.Size = New System.Drawing.Size(135, 23)
         Me.txtSL.TabIndex = 20
         '
         'Label7
         '
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(26, 134)
+        Me.Label7.Location = New System.Drawing.Point(20, 107)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(52, 29)
+        Me.Label7.Size = New System.Drawing.Size(88, 23)
         Me.Label7.TabIndex = 21
         Me.Label7.Text = "Đơn Giá"
         '
         'txtDONGIA
         '
         Me.txtDONGIA.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDONGIA.Location = New System.Drawing.Point(171, 133)
+        Me.txtDONGIA.Location = New System.Drawing.Point(133, 106)
         Me.txtDONGIA.Name = "txtDONGIA"
-        Me.txtDONGIA.Size = New System.Drawing.Size(173, 27)
+        Me.txtDONGIA.Size = New System.Drawing.Size(135, 23)
         Me.txtDONGIA.TabIndex = 22
         '
         'txtThanhTien
         '
         Me.txtThanhTien.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtThanhTien.Location = New System.Drawing.Point(171, 173)
+        Me.txtThanhTien.Location = New System.Drawing.Point(133, 138)
         Me.txtThanhTien.Name = "txtThanhTien"
-        Me.txtThanhTien.Size = New System.Drawing.Size(173, 27)
+        Me.txtThanhTien.Size = New System.Drawing.Size(135, 23)
         Me.txtThanhTien.TabIndex = 37
         '
         'Label13
         '
         Me.Label13.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(26, 174)
+        Me.Label13.Location = New System.Drawing.Point(20, 139)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(113, 29)
+        Me.Label13.Size = New System.Drawing.Size(88, 23)
         Me.Label13.TabIndex = 36
         Me.Label13.Text = "Thành Tiền "
         '
@@ -347,74 +340,64 @@ Public Class frmCTNHAP
         Me.dgMHNhap.GridLineColor = System.Drawing.Color.Maroon
         Me.dgMHNhap.HeaderForeColor = System.Drawing.SystemColors.ControlText
         Me.dgMHNhap.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.dgMHNhap.Location = New System.Drawing.Point(237, 290)
+        Me.dgMHNhap.Location = New System.Drawing.Point(184, 232)
         Me.dgMHNhap.Name = "dgMHNhap"
-        Me.dgMHNhap.Size = New System.Drawing.Size(740, 202)
+        Me.dgMHNhap.Size = New System.Drawing.Size(576, 162)
         Me.dgMHNhap.TabIndex = 46
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(21, 12)
+        Me.PictureBox3.Location = New System.Drawing.Point(16, 10)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(34, 35)
+        Me.PictureBox3.Size = New System.Drawing.Size(27, 28)
         Me.PictureBox3.TabIndex = 45
         Me.PictureBox3.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(82, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(64, 10)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
+        Me.PictureBox1.Size = New System.Drawing.Size(27, 28)
         Me.PictureBox1.TabIndex = 44
         Me.PictureBox1.TabStop = False
         '
         'cbNCC
         '
         Me.cbNCC.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbNCC.ItemHeight = 18
-        Me.cbNCC.Location = New System.Drawing.Point(541, 97)
+        Me.cbNCC.ItemHeight = 16
+        Me.cbNCC.Location = New System.Drawing.Point(421, 75)
         Me.cbNCC.Name = "cbNCC"
-        Me.cbNCC.Size = New System.Drawing.Size(436, 26)
+        Me.cbNCC.Size = New System.Drawing.Size(337, 24)
         Me.cbNCC.Sorted = True
         Me.cbNCC.TabIndex = 43
-        '
-        'cbNV
-        '
-        Me.cbNV.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbNV.ItemHeight = 18
-        Me.cbNV.Location = New System.Drawing.Point(738, 60)
-        Me.cbNV.Name = "cbNV"
-        Me.cbNV.Size = New System.Drawing.Size(239, 26)
-        Me.cbNV.Sorted = True
-        Me.cbNV.TabIndex = 41
         '
         'Label9
         '
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(123, 12)
+        Me.Label9.Location = New System.Drawing.Point(96, 10)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(449, 40)
+        Me.Label9.Size = New System.Drawing.Size(383, 32)
         Me.Label9.TabIndex = 40
         Me.Label9.Text = " Thông Tin Chứng Từ Nhập Mới"
         '
         'btnHuyCTN
         '
         Me.btnHuyCTN.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHuyCTN.Location = New System.Drawing.Point(442, 512)
+        Me.btnHuyCTN.Location = New System.Drawing.Point(344, 410)
         Me.btnHuyCTN.Name = "btnHuyCTN"
-        Me.btnHuyCTN.Size = New System.Drawing.Size(110, 29)
+        Me.btnHuyCTN.Size = New System.Drawing.Size(85, 23)
         Me.btnHuyCTN.TabIndex = 39
         Me.btnHuyCTN.Text = "Huỷ Bỏ "
         '
         'CheckBox
         '
         Me.CheckBox.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox.Location = New System.Drawing.Point(494, 170)
+        Me.CheckBox.Location = New System.Drawing.Point(384, 136)
         Me.CheckBox.Name = "CheckBox"
-        Me.CheckBox.Size = New System.Drawing.Size(447, 40)
+        Me.CheckBox.Size = New System.Drawing.Size(348, 32)
         Me.CheckBox.TabIndex = 38
         Me.CheckBox.Text = "Nếu Không Nợ Thì Hãy Đánh Dấu Chọn Vào Ô này"
         Me.CheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -422,105 +405,96 @@ Public Class frmCTNHAP
         'txtNgayHenTra
         '
         Me.txtNgayHenTra.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNgayHenTra.Location = New System.Drawing.Point(862, 214)
+        Me.txtNgayHenTra.Location = New System.Drawing.Point(670, 171)
         Me.txtNgayHenTra.Name = "txtNgayHenTra"
-        Me.txtNgayHenTra.Size = New System.Drawing.Size(113, 27)
+        Me.txtNgayHenTra.Size = New System.Drawing.Size(88, 23)
         Me.txtNgayHenTra.TabIndex = 35
         '
         'txtNO
         '
         Me.txtNO.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNO.Location = New System.Drawing.Point(469, 246)
+        Me.txtNO.Location = New System.Drawing.Point(365, 197)
         Me.txtNO.Name = "txtNO"
-        Me.txtNO.Size = New System.Drawing.Size(251, 27)
+        Me.txtNO.Size = New System.Drawing.Size(195, 23)
         Me.txtNO.TabIndex = 34
         '
         'Label12
         '
         Me.Label12.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(734, 216)
+        Me.Label12.Location = New System.Drawing.Point(571, 173)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(128, 29)
+        Me.Label12.Size = New System.Drawing.Size(99, 23)
         Me.Label12.TabIndex = 32
         Me.Label12.Text = "Ngày Hẹn Trả"
         '
         'Label11
         '
         Me.Label11.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(387, 252)
+        Me.Label11.Location = New System.Drawing.Point(301, 202)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(83, 29)
+        Me.Label11.Size = New System.Drawing.Size(65, 23)
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Còn Nợ"
         '
         'btnSua
         '
         Me.btnSua.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSua.Location = New System.Drawing.Point(41, 342)
+        Me.btnSua.Location = New System.Drawing.Point(32, 274)
         Me.btnSua.Name = "btnSua"
-        Me.btnSua.Size = New System.Drawing.Size(154, 29)
+        Me.btnSua.Size = New System.Drawing.Size(120, 23)
         Me.btnSua.TabIndex = 29
         Me.btnSua.Text = "Sửa Mặt Hàng"
         '
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(387, 217)
+        Me.Label10.Location = New System.Drawing.Point(301, 174)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(69, 29)
+        Me.Label10.Size = New System.Drawing.Size(54, 23)
         Me.Label10.TabIndex = 27
         Me.Label10.Text = "Đã Trả"
         '
         'txtDATRA
         '
         Me.txtDATRA.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDATRA.Location = New System.Drawing.Point(469, 213)
+        Me.txtDATRA.Location = New System.Drawing.Point(365, 170)
         Me.txtDATRA.Name = "txtDATRA"
-        Me.txtDATRA.Size = New System.Drawing.Size(251, 27)
+        Me.txtDATRA.Size = New System.Drawing.Size(195, 23)
         Me.txtDATRA.TabIndex = 26
         '
         'txtTONGTIEN
         '
         Me.txtTONGTIEN.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTONGTIEN.Location = New System.Drawing.Point(541, 134)
+        Me.txtTONGTIEN.Location = New System.Drawing.Point(421, 107)
         Me.txtTONGTIEN.Name = "txtTONGTIEN"
-        Me.txtTONGTIEN.Size = New System.Drawing.Size(436, 27)
+        Me.txtTONGTIEN.Size = New System.Drawing.Size(337, 23)
         Me.txtTONGTIEN.TabIndex = 24
         '
         'Label8
         '
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(387, 138)
+        Me.Label8.Location = New System.Drawing.Point(301, 110)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(165, 29)
+        Me.Label8.Size = New System.Drawing.Size(128, 24)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = "Tổng Thành Tiền "
         '
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(387, 100)
+        Me.Label4.Location = New System.Drawing.Point(301, 80)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(134, 29)
+        Me.Label4.Size = New System.Drawing.Size(104, 23)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Nhà Cung Cấp"
-        '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(644, 62)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(102, 29)
-        Me.Label3.TabIndex = 13
-        Me.Label3.Text = " Nhân Viên"
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(15, -110)
+        Me.Label2.Location = New System.Drawing.Point(12, -88)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(957, 110)
+        Me.Label2.Size = New System.Drawing.Size(744, 88)
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "Nhập Các Hoá Đơn Chứng Từ Của Những Mặt Hàng Mới Nhập"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -528,61 +502,61 @@ Public Class frmCTNHAP
         'txtNgayN
         '
         Me.txtNgayN.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNgayN.Location = New System.Drawing.Point(541, 60)
+        Me.txtNgayN.Location = New System.Drawing.Point(672, 43)
         Me.txtNgayN.Name = "txtNgayN"
-        Me.txtNgayN.Size = New System.Drawing.Size(97, 27)
+        Me.txtNgayN.Size = New System.Drawing.Size(86, 23)
         Me.txtNgayN.TabIndex = 11
         '
         'txtSOCTN
         '
         Me.txtSOCTN.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSOCTN.Location = New System.Drawing.Point(738, 18)
+        Me.txtSOCTN.Location = New System.Drawing.Point(421, 46)
         Me.txtSOCTN.Name = "txtSOCTN"
-        Me.txtSOCTN.Size = New System.Drawing.Size(239, 27)
+        Me.txtSOCTN.Size = New System.Drawing.Size(170, 23)
         Me.txtSOCTN.TabIndex = 10
         '
         'lbName
         '
         Me.lbName.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbName.Location = New System.Drawing.Point(387, 63)
+        Me.lbName.Location = New System.Drawing.Point(597, 48)
         Me.lbName.Name = "lbName"
-        Me.lbName.Size = New System.Drawing.Size(103, 23)
+        Me.lbName.Size = New System.Drawing.Size(80, 19)
         Me.lbName.TabIndex = 8
         Me.lbName.Text = "Ngày Nhập"
         '
         'lbID
         '
         Me.lbID.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbID.Location = New System.Drawing.Point(583, 22)
+        Me.lbID.Location = New System.Drawing.Point(301, 49)
         Me.lbID.Name = "lbID"
-        Me.lbID.Size = New System.Drawing.Size(175, 26)
+        Me.lbID.Size = New System.Drawing.Size(137, 20)
         Me.lbID.TabIndex = 7
         Me.lbID.Text = "Số Chứng từ Nhập"
         '
         'cmdSave
         '
         Me.cmdSave.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdSave.Location = New System.Drawing.Point(41, 292)
+        Me.cmdSave.Location = New System.Drawing.Point(32, 234)
         Me.cmdSave.Name = "cmdSave"
-        Me.cmdSave.Size = New System.Drawing.Size(154, 30)
+        Me.cmdSave.Size = New System.Drawing.Size(120, 24)
         Me.cmdSave.TabIndex = 3
-        Me.cmdSave.Text = "&Ghi Lại"
+        Me.cmdSave.Text = "&Lưu"
         '
         'cmdNew
         '
         Me.cmdNew.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdNew.Location = New System.Drawing.Point(237, 495)
+        Me.cmdNew.Location = New System.Drawing.Point(184, 396)
         Me.cmdNew.Name = "cmdNew"
-        Me.cmdNew.Size = New System.Drawing.Size(154, 54)
+        Me.cmdNew.Size = New System.Drawing.Size(120, 43)
         Me.cmdNew.TabIndex = 2
         Me.cmdNew.Text = "&Thêm Chứng Từ Nhập"
         '
         'cmdBack
         '
         Me.cmdBack.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdBack.Location = New System.Drawing.Point(653, 512)
+        Me.cmdBack.Location = New System.Drawing.Point(508, 410)
         Me.cmdBack.Name = "cmdBack"
-        Me.cmdBack.Size = New System.Drawing.Size(110, 30)
+        Me.cmdBack.Size = New System.Drawing.Size(85, 24)
         Me.cmdBack.TabIndex = 8
         Me.cmdBack.Text = "&Quay Lại"
         '
@@ -594,22 +568,22 @@ Public Class frmCTNHAP
         Me.tabCTN.Location = New System.Drawing.Point(1, 0)
         Me.tabCTN.Name = "tabCTN"
         Me.tabCTN.SelectedIndex = 0
-        Me.tabCTN.Size = New System.Drawing.Size(1008, 618)
+        Me.tabCTN.Size = New System.Drawing.Size(784, 494)
         Me.tabCTN.TabIndex = 6
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Grb1)
         Me.TabPage1.Controls.Add(Me.Grb2)
         Me.TabPage1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1000, 589)
+        Me.TabPage1.Size = New System.Drawing.Size(776, 465)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Thông Tin Chứng Từ Nhập"
         '
         'Grb2
         '
-        Me.Grb2.Controls.Add(Me.Grb1)
         Me.Grb2.Controls.Add(Me.btnSuaCTN)
         Me.Grb2.Controls.Add(Me.rAll)
         Me.Grb2.Controls.Add(Me.rMa)
@@ -630,71 +604,71 @@ Public Class frmCTNHAP
         Me.Grb2.Controls.Add(Me.cmdXoaCTN)
         Me.Grb2.Controls.Add(Me.cmdClose)
         Me.Grb2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Grb2.Location = New System.Drawing.Point(0, 3)
+        Me.Grb2.Location = New System.Drawing.Point(7, 12)
         Me.Grb2.Name = "Grb2"
-        Me.Grb2.Size = New System.Drawing.Size(998, 559)
+        Me.Grb2.Size = New System.Drawing.Size(769, 439)
         Me.Grb2.TabIndex = 5
         Me.Grb2.TabStop = False
         '
         'btnSuaCTN
         '
         Me.btnSuaCTN.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSuaCTN.Location = New System.Drawing.Point(438, 500)
+        Me.btnSuaCTN.Location = New System.Drawing.Point(341, 400)
         Me.btnSuaCTN.Name = "btnSuaCTN"
-        Me.btnSuaCTN.Size = New System.Drawing.Size(134, 29)
+        Me.btnSuaCTN.Size = New System.Drawing.Size(104, 23)
         Me.btnSuaCTN.TabIndex = 29
-        Me.btnSuaCTN.Text = "Sửa Chữa"
+        Me.btnSuaCTN.Text = "&Sửa "
         '
         'rAll
         '
         Me.rAll.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rAll.Location = New System.Drawing.Point(838, 103)
+        Me.rAll.Location = New System.Drawing.Point(652, 82)
         Me.rAll.Name = "rAll"
-        Me.rAll.Size = New System.Drawing.Size(144, 30)
+        Me.rAll.Size = New System.Drawing.Size(112, 24)
         Me.rAll.TabIndex = 28
         Me.rAll.Text = "Chọn Tất Cả"
         '
         'rMa
         '
         Me.rMa.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rMa.Location = New System.Drawing.Point(838, 71)
+        Me.rMa.Location = New System.Drawing.Point(652, 57)
         Me.rMa.Name = "rMa"
-        Me.rMa.Size = New System.Drawing.Size(144, 30)
+        Me.rMa.Size = New System.Drawing.Size(112, 24)
         Me.rMa.TabIndex = 27
         Me.rMa.Text = "Tìm Theo Mã"
         '
         'rNgay
         '
         Me.rNgay.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rNgay.Location = New System.Drawing.Point(838, 37)
+        Me.rNgay.Location = New System.Drawing.Point(652, 30)
         Me.rNgay.Name = "rNgay"
-        Me.rNgay.Size = New System.Drawing.Size(164, 30)
+        Me.rNgay.Size = New System.Drawing.Size(127, 24)
         Me.rNgay.TabIndex = 26
         Me.rNgay.Text = "Tìm Theo Ngày"
         '
         'btnChiTiet
         '
         Me.btnChiTiet.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnChiTiet.Location = New System.Drawing.Point(99, 500)
+        Me.btnChiTiet.Location = New System.Drawing.Point(77, 400)
         Me.btnChiTiet.Name = "btnChiTiet"
-        Me.btnChiTiet.Size = New System.Drawing.Size(134, 29)
+        Me.btnChiTiet.Size = New System.Drawing.Size(104, 23)
         Me.btnChiTiet.TabIndex = 25
         Me.btnChiTiet.Text = "Xem Chi Tiết"
         '
         'txtCTN
         '
         Me.txtCTN.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCTN.Location = New System.Drawing.Point(658, 87)
+        Me.txtCTN.Location = New System.Drawing.Point(512, 70)
         Me.txtCTN.Name = "txtCTN"
-        Me.txtCTN.Size = New System.Drawing.Size(167, 27)
+        Me.txtCTN.Size = New System.Drawing.Size(130, 23)
         Me.txtCTN.TabIndex = 24
         '
         'Label17
         '
         Me.Label17.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(492, 93)
+        Me.Label17.Location = New System.Drawing.Point(383, 74)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(175, 28)
+        Me.Label17.Size = New System.Drawing.Size(136, 23)
         Me.Label17.TabIndex = 23
         Me.Label17.Text = "Mã Chứng Từ Nhập"
         '
@@ -702,17 +676,17 @@ Public Class frmCTNHAP
         '
         Me.cbNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbNam.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbNam.Location = New System.Drawing.Point(373, 89)
+        Me.cbNam.Location = New System.Drawing.Point(290, 71)
         Me.cbNam.Name = "cbNam"
-        Me.cbNam.Size = New System.Drawing.Size(113, 26)
+        Me.cbNam.Size = New System.Drawing.Size(88, 24)
         Me.cbNam.TabIndex = 22
         '
         'Label16
         '
         Me.Label16.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(320, 93)
+        Me.Label16.Location = New System.Drawing.Point(249, 74)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(51, 29)
+        Me.Label16.Size = New System.Drawing.Size(40, 24)
         Me.Label16.TabIndex = 21
         Me.Label16.Text = "Năm"
         '
@@ -720,26 +694,26 @@ Public Class frmCTNHAP
         '
         Me.cbThang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbThang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbThang.Location = New System.Drawing.Point(218, 89)
+        Me.cbThang.Location = New System.Drawing.Point(170, 71)
         Me.cbThang.Name = "cbThang"
-        Me.cbThang.Size = New System.Drawing.Size(83, 26)
+        Me.cbThang.Size = New System.Drawing.Size(64, 24)
         Me.cbThang.TabIndex = 20
         '
         'Label15
         '
         Me.Label15.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(153, 92)
+        Me.Label15.Location = New System.Drawing.Point(119, 74)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(61, 29)
+        Me.Label15.Size = New System.Drawing.Size(47, 23)
         Me.Label15.TabIndex = 19
         Me.Label15.Text = "Tháng"
         '
         'Label14
         '
         Me.Label14.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(8, 92)
+        Me.Label14.Location = New System.Drawing.Point(6, 74)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(51, 29)
+        Me.Label14.Size = New System.Drawing.Size(40, 23)
         Me.Label14.TabIndex = 18
         Me.Label14.Text = "Ngày"
         '
@@ -747,17 +721,17 @@ Public Class frmCTNHAP
         '
         Me.cbNgay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbNgay.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbNgay.Location = New System.Drawing.Point(61, 89)
+        Me.cbNgay.Location = New System.Drawing.Point(47, 71)
         Me.cbNgay.Name = "cbNgay"
-        Me.cbNgay.Size = New System.Drawing.Size(83, 26)
+        Me.cbNgay.Size = New System.Drawing.Size(65, 24)
         Me.cbNgay.TabIndex = 17
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(178, 27)
+        Me.PictureBox2.Location = New System.Drawing.Point(138, 22)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(51, 40)
+        Me.PictureBox2.Size = New System.Drawing.Size(40, 32)
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
         '
@@ -765,9 +739,9 @@ Public Class frmCTNHAP
         '
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(221, 28)
+        Me.Label1.Location = New System.Drawing.Point(172, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(558, 40)
+        Me.Label1.Size = New System.Drawing.Size(434, 32)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Danh Sách Các Hoá Đơn Chứng Từ Nhập"
         '
@@ -780,42 +754,42 @@ Public Class frmCTNHAP
         Me.dgView.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgView.GridLineColor = System.Drawing.Color.Maroon
         Me.dgView.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.dgView.Location = New System.Drawing.Point(10, 148)
+        Me.dgView.Location = New System.Drawing.Point(8, 118)
         Me.dgView.Name = "dgView"
-        Me.dgView.Size = New System.Drawing.Size(987, 320)
+        Me.dgView.Size = New System.Drawing.Size(767, 256)
         Me.dgView.TabIndex = 14
         '
         'cmdThemCTN
         '
         Me.cmdThemCTN.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdThemCTN.Location = New System.Drawing.Point(273, 500)
+        Me.cmdThemCTN.Location = New System.Drawing.Point(212, 400)
         Me.cmdThemCTN.Name = "cmdThemCTN"
-        Me.cmdThemCTN.Size = New System.Drawing.Size(123, 30)
+        Me.cmdThemCTN.Size = New System.Drawing.Size(96, 24)
         Me.cmdThemCTN.TabIndex = 12
-        Me.cmdThemCTN.Text = "&Thêm Mới"
+        Me.cmdThemCTN.Text = "&Thêm "
         '
         'cmdXoaCTN
         '
         Me.cmdXoaCTN.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdXoaCTN.Location = New System.Drawing.Point(612, 500)
+        Me.cmdXoaCTN.Location = New System.Drawing.Point(476, 400)
         Me.cmdXoaCTN.Name = "cmdXoaCTN"
-        Me.cmdXoaCTN.Size = New System.Drawing.Size(123, 30)
+        Me.cmdXoaCTN.Size = New System.Drawing.Size(96, 24)
         Me.cmdXoaCTN.TabIndex = 9
         Me.cmdXoaCTN.Text = "&Xoá Bỏ"
         '
         'cmdClose
         '
         Me.cmdClose.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdClose.Location = New System.Drawing.Point(777, 500)
+        Me.cmdClose.Location = New System.Drawing.Point(604, 400)
         Me.cmdClose.Name = "cmdClose"
-        Me.cmdClose.Size = New System.Drawing.Size(123, 30)
+        Me.cmdClose.Size = New System.Drawing.Size(96, 24)
         Me.cmdClose.TabIndex = 11
         Me.cmdClose.Text = "&Đóng"
         '
         'frmCTNHAP
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(9, 20)
-        Me.ClientSize = New System.Drawing.Size(1032, 608)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(7, 16)
+        Me.ClientSize = New System.Drawing.Size(1032, 480)
         Me.Controls.Add(Me.tabCTN)
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -1028,17 +1002,7 @@ Public Class frmCTNHAP
             SplitCode = xcode
             Exit Function
         End If
-        If ch = "NV" Then
-            len = InStr(Me.cbNV.Text, "--")
-            leng = Microsoft.VisualBasic.Len(Me.cbNV.Text)
-            If len > 1 Then
-                xcode = Microsoft.VisualBasic.Right(Me.cbNV.Text, leng - len - 1)
-            Else
-                xcode = Me.cbNV.Text
-            End If
-            SplitCode = xcode
-            Exit Function
-        End If
+       
     End Function
     'Xây dựng thủ tục thực hiện việc đưa dữ liệu vào trong các combobox: MANV,MANCC,MAMH...
     Private Sub fillcombo(ByVal st As String, ByVal obj As String)
@@ -1051,15 +1015,6 @@ Public Class frmCTNHAP
             mySQLConnection.Open()
             Dim drReader As SqlDataReader
             drReader = sqlcmd.ExecuteReader()
-            If obj = "NV" Then
-                Do While drReader.Read()
-                    xma = ""
-                    xten = ""
-                    xma = drReader.GetString(0)
-                    xten = drReader.GetString(1)
-                    Me.cbNV.Items.Add(xten & "--" & xma)
-                Loop
-            End If
             If obj = "MH" Then
                 Do While drReader.Read()
                     xma = ""
@@ -1104,7 +1059,6 @@ Public Class frmCTNHAP
         Me.txtNgayHenTra.Text = ""
         Me.cbMH.Text = ""
         Me.cbNCC.Text = ""
-        Me.cbNV.Text = ""
         Me.CheckBox.Checked = False
         Me.txtSOCTN.Enabled = True
         Me.txtNgayN.Enabled = True
@@ -1130,11 +1084,6 @@ Public Class frmCTNHAP
                 End If
             End If
         End If
-        If Me.cbNV.Text = "" Then
-            MessageBox.Show("Bạn hãy cho biết nhân viên nhập hàng !.", "Thông Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Me.cbNV.Focus()
-            Exit Sub
-        End If
         If Me.cbNCC.Text = "" Then
             MessageBox.Show("Bạn hãy cho biết nhà cung cấp hàng !.", "Thông Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.cbNCC.Focus()
@@ -1147,14 +1096,14 @@ Public Class frmCTNHAP
         End If
         If okSua = True And Me.btnThemMH.Enabled = False Then
             'ghi lai chung tu sau khi sua CTN thanh khong con no gi 
-            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & xMA & "'"
+            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & xMA & "'"
             Dim ook As Boolean = True
             Dim xcmd As New SqlCommand(strcmd, mySQLConnection)
             Try
                 mySQLConnection.Open()
                 xcmd.ExecuteNonQuery()
             Catch
-                MessageBox.Show("Không thể ghi lại được thông tin của chứng từ nhập này. Hãy thử lại !.", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Không thể Lưu được thông tin của chứng từ nhập này. Hãy thử lại !.", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 ook = False
             Finally
                 If mySQLConnection.State = ConnectionState.Open Then
@@ -1173,14 +1122,14 @@ Public Class frmCTNHAP
         If okSua = True AndAlso Me.txtSL.Text = "" AndAlso Me.txtDONGIA.Text = "" AndAlso Me.txtThanhTien.Text = "" Then
             'chi cap nhat nhung thong tin trong bang CTNHAP
 
-            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
+            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
             Dim cmdCTN As New SqlCommand(strcmd, mySQLConnection)
             Dim ok1 As Boolean = True
             Try
                 mySQLConnection.Open()
                 cmdCTN.ExecuteNonQuery()
             Catch
-                MessageBox.Show("Không thể ghi lại được thông tin của chứng từ nhập này. Hãy thử lại !.", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Không thể Lưu được thông tin của chứng từ nhập này. Hãy thử lại !.", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 ok1 = False
             Finally
                 If mySQLConnection.State = ConnectionState.Open Then
@@ -1238,7 +1187,7 @@ Public Class frmCTNHAP
         Dim cmdNK As SqlCommand
         Dim cmdCT As SqlCommand
 
-        If Me.cmdSave.Text = "Ghi Lại" Then
+        If Me.cmdSave.Text = "Lưu" Then
             If okThem = True Then
                 If Me.txtSOCTN.Text = "" Then
                     MessageBox.Show("Bạn Hãy Nhập Vào Số Chứng Từ Nhập !.  ", "Xin Chào !", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -1254,7 +1203,7 @@ Public Class frmCTNHAP
                 'ghi lai thong tin trong truong hop nhap chung tu lan dau  tien
                 'insert,insert,okthem=false
                 cmdNK = New SqlCommand("Insert into tblNHAPKHO(SOCTN,MAMH,SOLUONG,DONGIA) Values('" & UCase(Me.txtSOCTN.Text) & "','" & UCase(SplitCode("MH")) & "','" & Me.txtSL.Text & "','" & Me.txtDONGIA.Text & "')", mySQLConnection)
-                Dim str = "insert into tblCTNHAP(SOCTN,NGAYN,MANV,MANCC,TONGGIATRI) values('" & UCase(Me.txtSOCTN.Text) & "','" & Me.txtNgayN.Text & "','" & UCase(SplitCode("NV")) & "','" & UCase(SplitCode("NCC")) & "'," & Me.txtTONGTIEN.Text & ")"
+                Dim str = "insert into tblCTNHAP(SOCTN,NGAYN,MANCC,TONGGIATRI) values('" & UCase(Me.txtSOCTN.Text) & "','" & Me.txtNgayN.Text & "','" & UCase(SplitCode("NCC")) & "'," & Me.txtTONGTIEN.Text & ")"
                 cmdCT = New SqlCommand(str, mySQLConnection)
             Else
                 If checkItem(SplitCode("MH")) = False Then
@@ -1273,13 +1222,13 @@ Public Class frmCTNHAP
                 'cho phep ghi lai thong tin khi ghi lai tu lan thu 2 (nhap MH lan 2)
                 'update,insert
                 cmdNK = New SqlCommand("Insert into tblNHAPKHO(SOCTN,MAMH,SOLUONG,DONGIA) Values('" & UCase(Me.txtSOCTN.Text) & "','" & UCase(SplitCode("MH")) & "','" & Me.txtSL.Text & "','" & Me.txtDONGIA.Text & "')", mySQLConnection)
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
 
             If okSua = True Then 'cho phep ghi lai khi them vaoCTNHAP mat hang moi
                 cmdNK = New SqlCommand("Insert into tblNHAPKHO(SOCTN,MAMH,SOLUONG,DONGIA) Values('" & UCase(Me.txtSOCTN.Text) & "','" & UCase(SplitCode("MH")) & "','" & Me.txtSL.Text & "','" & Me.txtDONGIA.Text & "')", mySQLConnection)
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
 
@@ -1293,14 +1242,14 @@ Public Class frmCTNHAP
             If okSua = True And xMA <> "" Then
                 cmdNK = New SqlCommand("update tblNHAPKHO set MAMH='" & SplitCode("MH") & "',SOLUONG=" & Me.txtSL.Text & ",DONGIA=" & Me.txtDONGIA.Text & " where MAMH='" & oMAMH & "' and SOCTN='" & xMA & "'", mySQLConnection)
                 'nut Me.cmdSave.Text = "Cập Nhật"
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
 
             If okThem = False And xMA = "" And okSua = False Then
                 cmdNK = New SqlCommand("update tblNHAPKHO set MAMH='" & SplitCode("MH") & "',SOLUONG=" & Me.txtSL.Text & ",DONGIA=" & Me.txtDONGIA.Text & " where MAMH='" & oMAMH & "' and SOCTN='" & Me.txtSOCTN.Text & "'", mySQLConnection)
                 'nut Me.cmdSave.Text = "Cập Nhật"
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
         End If
@@ -1310,9 +1259,9 @@ Public Class frmCTNHAP
             cmdCT.ExecuteNonQuery()
             cmdNK.ExecuteNonQuery()
         Catch
-            MessageBox.Show("Không Thể Ghi Lại Những Thông Tin Trên. Bạn Hãy Thử Lại !.", "Thông Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Không Thể Lưu Những Thông Tin Trên. Bạn Hãy Thử Lại !.", "Thông Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
             'chu y phai goi lai thu tuc load lai TONGGIATRI ...
-            Me.cmdSave.Text = "Ghi Lại"
+            Me.cmdSave.Text = "Lưu"
         Finally
             If Me.mySQLConnection.State = ConnectionState.Open Then
                 Me.mySQLConnection.Close()
@@ -1327,7 +1276,7 @@ Public Class frmCTNHAP
         Me.txtSL.Text = ""
         Me.txtDONGIA.Text = ""
         Me.txtThanhTien.Text = ""
-        Me.cmdSave.Text = "Ghi Lại"
+        Me.cmdSave.Text = "Lưu"
         Me.CheckBox.Checked = False
         Call fillDgMH(Me.txtSOCTN.Text)
         Me.txtDONGIA.Enabled = True
@@ -1364,7 +1313,6 @@ Public Class frmCTNHAP
         blank()
 
         Me.cbNCC.DropDownStyle = ComboBoxStyle.DropDownList
-        Me.cbNV.DropDownStyle = ComboBoxStyle.DropDownList
         Me.cbMH.DropDownStyle = ComboBoxStyle.DropDownList
 
         Me.txtSOCTN.Enabled = True
@@ -1380,7 +1328,7 @@ Public Class frmCTNHAP
         Me.btnHuyCTN.Enabled = True
         Me.cmdNew.Enabled = True
         Me.cmdSave.Enabled = True
-        Me.cmdSave.Text = "Ghi Lại"
+        Me.cmdSave.Text = "Lưu"
     End Sub
 
     Private Sub cmdNew_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdNew.Click
@@ -1397,7 +1345,7 @@ Public Class frmCTNHAP
         Me.btnHuyCTN.Enabled = True
         Me.cmdNew.Enabled = True
         Me.cmdSave.Enabled = True
-        Me.cmdSave.Text = "Ghi Lại"
+        Me.cmdSave.Text = "Lưu"
         Call fillDgMH(Me.txtSOCTN.Text)
         Me.txtSOCTN.Focus()
     End Sub
@@ -1405,7 +1353,7 @@ Public Class frmCTNHAP
     Private Sub cmdBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBack.Click
 
         If xGhiMoi = False Then
-            If MessageBox.Show("Bạn có muốn ghi lại chứng từ nhập này không?. Bạn chọn Yes để ghi lại, nếu bạn chọn No thì chứng từ nhập này sẽ bị xoá. ", "Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            If MessageBox.Show("Bạn có muốn Lưu chứng từ nhập này không?. Bạn chọn Yes để Lưu, nếu bạn chọn No thì chứng từ nhập này sẽ bị xoá. ", "Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                 MessageBox.Show("Bạn hãy kích vào nút --Hoàn Thành Nhập-- để kết thúc.", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Exit Sub
             Else
@@ -1442,7 +1390,6 @@ Public Class frmCTNHAP
         GetData()
         fillcombo("select MAMH,TENMH from tblMATHANG", "MH")
         fillcombo("select MANCC,TENNCC from tblNCC", "NCC")
-        fillcombo("select MANV,HOTEN from tblNHANVIEN", "NV")
         fillcbDate()
         Me.rAll.Checked = True
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
@@ -1492,7 +1439,6 @@ Public Class frmCTNHAP
                     End If
                 End If
             End If
-            Me.cbNV.Focus()
         End If
     End Sub
 
@@ -1590,7 +1536,7 @@ Public Class frmCTNHAP
             Else
                 oTG = 0
             End If
-            If Me.cmdSave.Text = "Ghi Lại" Then
+            If Me.cmdSave.Text = "Lưu" Then
                 Me.txtTONGTIEN.Text = oTG + Me.txtThanhTien.Text
             Else
 
@@ -1743,19 +1689,6 @@ Public Class frmCTNHAP
         Me.cmdSave.Text = "Cập Nhật"
     End Sub
 
-    Private Sub cbNV_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles cbNV.KeyPress
-        If e.KeyChar = "D" Or e.KeyChar = "d" Then
-            Me.cbNV.DroppedDown = True
-        End If
-        If e.KeyChar = Chr(13) Then
-            If Me.cbNV.Text = "" Then
-                MessageBox.Show("Bạn hãy cho biết tên nhân viên nhập chứng từ !.", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Me.cbNV.Focus()
-                Exit Sub
-            End If
-            Me.cbNCC.Focus()
-        End If
-    End Sub
 
     Private Sub cbNCC_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles cbNCC.KeyPress
         If e.KeyChar = "D" Or e.KeyChar = "d" Then
@@ -1873,7 +1806,6 @@ Public Class frmCTNHAP
             Me.Grb2.Visible = False
             blank()
             Me.cbNCC.DropDownStyle = ComboBoxStyle.DropDown
-            Me.cbNV.DropDownStyle = ComboBoxStyle.DropDown
             Me.txtSOCTN.Enabled = True
             Me.txtNgayN.Enabled = True
             Me.CheckBox.Checked = False
@@ -1881,7 +1813,6 @@ Public Class frmCTNHAP
             xtg = dgView.Item(dgView.CurrentCell.RowNumber, 0)
             Me.txtSOCTN.Text = xtg
             Me.txtNgayN.Text = dgView.Item(dgView.CurrentCell.RowNumber, 1)
-            Me.cbNV.Text = dgView.Item(dgView.CurrentCell.RowNumber, 2)
             Me.cbNCC.Text = dgView.Item(dgView.CurrentCell.RowNumber, 3)
             Me.txtTONGTIEN.Text = Me.dgView.Item(dgView.CurrentCell.RowNumber, 4)
             Dim xTONGTIEN = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 4))
@@ -1928,7 +1859,6 @@ Public Class frmCTNHAP
         xtg = dgView.Item(dgView.CurrentCell.RowNumber, 0)
         Me.txtSOCTN.Text = xtg
         Me.txtNgayN.Text = dgView.Item(dgView.CurrentCell.RowNumber, 1)
-        Me.cbNV.Text = dgView.Item(dgView.CurrentCell.RowNumber, 2)
         Me.cbNCC.Text = dgView.Item(dgView.CurrentCell.RowNumber, 3)
         Me.txtTONGTIEN.Text = Me.dgView.Item(dgView.CurrentCell.RowNumber, 4)
         Dim xTONGTIEN = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 4))
@@ -1954,8 +1884,8 @@ Public Class frmCTNHAP
     End Sub
 
     Private Sub btnThemMH_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnThemMH.Click
-        If Me.cmdSave.Text <> "Ghi Lại" Then
-            Me.cmdSave.Text = "Ghi Lại"
+        If Me.cmdSave.Text <> "Lưu" Then
+            Me.cmdSave.Text = "Lưu"
         End If
         Me.cbMH.Text = ""
         Me.txtSL.Text = ""
@@ -1988,11 +1918,6 @@ Public Class frmCTNHAP
                     Exit Sub
                 End If
             End If
-        End If
-        If Me.cbNV.Text = "" Then
-            MessageBox.Show("Bạn hãy cho biết nhân viên nhập hàng !.", "Thông Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Me.cbNV.Focus()
-            Exit Sub
         End If
         If Me.cbNCC.Text = "" Then
             MessageBox.Show("Bạn hãy cho biết nhà cung cấp hàng !.", "Thông Báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -2049,8 +1974,8 @@ Public Class frmCTNHAP
         Dim xxok As Boolean = True
         Dim cmdCT As New SqlCommand()
 
-        Dim str1 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & Me.txtSOCTN.Text & "'"
-        Dim str2 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANV='" & UCase(SplitCode("NV")) & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & Me.txtSOCTN.Text & "'"
+        Dim str1 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & Me.txtSOCTN.Text & "'"
+        Dim str2 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & Me.txtSOCTN.Text & "'"
         If Me.CheckBox.Checked = True Then
             cmdCT = New SqlCommand(str1, mySQLConnection)
         Else
@@ -2069,9 +1994,7 @@ Public Class frmCTNHAP
         End Try
         If xxok Then
             Me.cbNCC.DropDownStyle = ComboBoxStyle.DropDown
-            Me.cbNV.DropDownStyle = ComboBoxStyle.DropDown
             Me.cbNCC.Text = ""
-            Me.cbNV.Text = ""
             Call blank()
             Call fillDgMH(Me.txtSOCTN.Text)
             xGhiMoi = True
@@ -2079,7 +2002,6 @@ Public Class frmCTNHAP
             okThem = True
             Me.txtSOCTN.Focus()
             Me.cbNCC.DropDownStyle = ComboBoxStyle.DropDownList
-            Me.cbNV.DropDownStyle = ComboBoxStyle.DropDownList
         End If
         Me.txtNO.Enabled = True
     End Sub
@@ -2149,7 +2071,7 @@ Public Class frmCTNHAP
 
     Private Sub cmDong_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmDong.Click
         If xGhiMoi = False Then
-            If MessageBox.Show("Bạn có muốn ghi lại chứng từ nhập này không?. Bạn chọn Yes để ghi lại, nếu bạn chọn No thì chứng từ nhập này sẽ bị xoá. ", "Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            If MessageBox.Show("Bạn có muốn lưu chứng từ nhập này không?. Bạn chọn Yes để Lưu, nếu bạn chọn No thì chứng từ nhập này sẽ bị xoá. ", "Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                 MessageBox.Show("Bạn hãy kích vào nút --Hoàn Thành Nhập-- để kết thúc.", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Exit Sub
             Else

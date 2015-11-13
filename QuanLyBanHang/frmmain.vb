@@ -486,8 +486,7 @@ Public Class frmMain
         '
         'frmMain
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
-        Me.BackgroundImage = Global.Hoang.My.Resources.Resources._1458626_617099768348382_165194338_n
+        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.ClientSize = New System.Drawing.Size(624, 368)
         Me.Controls.Add(Me.ToolBar1)
         Me.HelpButton = True
@@ -508,14 +507,14 @@ Public Class frmMain
 
 
     Private Sub form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Call Main()
-        Dim xNgay, xThang, xNam As String
-        xNgay = ""
-        xThang = ""
-        xNam = ""
-        xNgay = CStr(Microsoft.VisualBasic.Day(DateString))
-        xThang = CStr(Microsoft.VisualBasic.Month(DateString))
-        xNam = CStr(Microsoft.VisualBasic.Year(DateString))
+        'Call Main()
+        'Dim xNgay, xThang, xNam As String
+        'xNgay = ""
+        'xThang = ""
+        'xNam = ""
+        'xNgay = CStr(Microsoft.VisualBasic.Day(DateString))
+        'xThang = CStr(Microsoft.VisualBasic.Month(DateString))
+        'xNam = CStr(Microsoft.VisualBasic.Year(DateString))
         'Timer_Stop.Enabled = True
         'childform2 = New frmLogin()
         'childform2.ShowDialog()
@@ -533,6 +532,7 @@ Public Class frmMain
             Me.mnuThemNguoiSD.Enabled = False
             Me.toolbtnThemNSD.Visible = False
         End If
+        strconn = "Data Source=DuyHuy-PC\SQLEXPRESS2008R2;Initial Catalog=HOANG;User ID=sa;Password=sa"
     End Sub
 
     Private Sub mnuNHOMMH_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnuNHOMMH.Click
