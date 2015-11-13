@@ -918,7 +918,7 @@ Public Class frmCTNHAP
 
     Private Sub GetData()
         Dim str As String = ""
-        str = "Select SOCTN as [Số Chứng Từ Nhập],NGAYN as [Ngày Nhập],MANV as [Mã Nhân Viên],MANCC as [Mã Nhà Cung Cấp],TONGGIATRI as [Tổng Giá Trị],DATRA as [Đã Trả],CONNO as [Còn Nợ],NGAYHENTRA as [Ngày Hẹn Trả] from tblCTNHAP"
+        str = "Select SOCTN as [Số Chứng Từ Nhập],NGAYN as [Ngày Nhập],MANCC as [Mã Nhà Cung Cấp],TONGGIATRI as [Tổng Giá Trị],DATRA as [Đã Trả],CONNO as [Còn Nợ],NGAYHENTRA as [Ngày Hẹn Trả] from tblCTNHAP"
         If Me.rNgay.Checked = True Then
             If Me.cbNgay.Text <> "" Then
                 str = str & " where day(NGAYN)='" & Me.cbNgay.Text & "'"
