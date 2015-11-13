@@ -123,6 +123,9 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBAOCAO.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HOANGDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -220,6 +223,9 @@
     <EmbeddedResource Include="frmBANHANG.resx">
       <DependentUpon>frmBANHANG.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBAOCAO.resx">
+      <DependentUpon>frmBAOCAO.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChangepass.resx">
       <DependentUpon>frmChangepass.vb</DependentUpon>
     </EmbeddedResource>
@@ -260,7 +266,7 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="Hoang_Help.chm" />
+    <None Include="QuanLyBanHang_Help.chm" />
     <None Include="My Project\Settings.settings">
       <CustomToolNamespace>My</CustomToolNamespace>
       <Generator>SettingsSingleFileGenerator</Generator>
