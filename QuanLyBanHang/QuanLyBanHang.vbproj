@@ -7,7 +7,7 @@
     <ProjectGuid>{82AEBBFF-410C-4A77-85F5-EED77A7D6340}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ApplicationIcon>8.ICO</ApplicationIcon>
+    <ApplicationIcon>9.ICO</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>Hoang</AssemblyName>
@@ -85,6 +85,9 @@
     <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
     <DebugType>none</DebugType>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -131,6 +134,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HOANGDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,7 +153,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
     </Compile>
-    <Content Include="8.ICO" />
+    <Content Include="9.ICO" />
     <Compile Include="AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
@@ -192,6 +199,11 @@
     <Compile Include="mdStart.vb">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
     <None Include="HOANGDataSet.xsc">
       <DependentUpon>HOANGDataSet.xsd</DependentUpon>
     </None>
