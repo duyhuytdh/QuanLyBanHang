@@ -184,6 +184,8 @@
     <Compile Include="mdStart.vb">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="Resources\13363508121722379311_574_574.jpg" />
+    <None Include="Resources\1458626_617099768348382_165194338_n.jpg" />
     <None Include="QuanLyBanHangDataSet.xsc">
       <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
     </None>

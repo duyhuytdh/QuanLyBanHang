@@ -41,21 +41,19 @@ Public Class frmChangepass
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents btnDoi As System.Windows.Forms.Button
-    Friend WithEvents txtOlduser As System.Windows.Forms.TextBox
-    Friend WithEvents txtOldpass As System.Windows.Forms.TextBox
     Friend WithEvents txtNewuser As System.Windows.Forms.TextBox
     Friend WithEvents txtNewpass As System.Windows.Forms.TextBox
     Friend WithEvents txtRenewpass As System.Windows.Forms.TextBox
     Friend WithEvents btnDong As System.Windows.Forms.Button
+    Friend WithEvents txtOldpass As System.Windows.Forms.TextBox
+    Friend WithEvents txtOlduser As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmChangepass))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmChangepass))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtOldpass = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtOlduser = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtRenewpass = New System.Windows.Forms.TextBox()
@@ -66,168 +64,183 @@ Public Class frmChangepass
         Me.btnDoi = New System.Windows.Forms.Button()
         Me.btnDong = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.txtOldpass = New System.Windows.Forms.TextBox()
+        Me.txtOlduser = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(0, Byte), CType(64, Byte), CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(216, 12)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(190, 14)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(224, 23)
+        Me.Label1.Size = New System.Drawing.Size(307, 34)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Thay Đổi Mật Khẩu"
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.AddRange(New System.Windows.Forms.Control() {Me.Label3, Me.txtOldpass, Me.Label2, Me.txtOlduser})
-        Me.GroupBox1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(56, 50)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.txtOldpass)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.txtOlduser)
+        Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 72)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(472, 100)
+        Me.GroupBox1.Size = New System.Drawing.Size(521, 126)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mật Khẩu Cũ"
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(8, 64)
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(25, 76)
         Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(120, 26)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Mật Khẩu"
         '
-        'txtOldpass
-        '
-        Me.txtOldpass.Location = New System.Drawing.Point(160, 56)
-        Me.txtOldpass.Name = "txtOldpass"
-        Me.txtOldpass.PasswordChar = Microsoft.VisualBasic.ChrW(42)
-        Me.txtOldpass.Size = New System.Drawing.Size(256, 23)
-        Me.txtOldpass.TabIndex = 2
-        Me.txtOldpass.Text = ""
-        '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 32)
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(25, 37)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(136, 23)
+        Me.Label2.Size = New System.Drawing.Size(163, 26)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Tên Người Sử Dụng"
         '
-        'txtOlduser
-        '
-        Me.txtOlduser.Location = New System.Drawing.Point(160, 24)
-        Me.txtOlduser.Name = "txtOlduser"
-        Me.txtOlduser.Size = New System.Drawing.Size(256, 23)
-        Me.txtOlduser.TabIndex = 0
-        Me.txtOlduser.Text = ""
-        '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.AddRange(New System.Windows.Forms.Control() {Me.Label6, Me.txtRenewpass, Me.txtNewpass, Me.Label5, Me.txtNewuser, Me.Label4})
-        Me.GroupBox2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(56, 157)
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.txtRenewpass)
+        Me.GroupBox2.Controls.Add(Me.txtNewpass)
+        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Controls.Add(Me.txtNewuser)
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(31, 204)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(472, 155)
+        Me.GroupBox2.Size = New System.Drawing.Size(521, 161)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Mật Khẩu Mới"
         '
         'Label6
         '
-        Me.Label6.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(8, 112)
+        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(25, 129)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(136, 23)
+        Me.Label6.Size = New System.Drawing.Size(163, 27)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Đánh Lại Mật Khẩu"
         '
         'txtRenewpass
         '
-        Me.txtRenewpass.Location = New System.Drawing.Point(160, 112)
+        Me.txtRenewpass.Location = New System.Drawing.Point(195, 126)
         Me.txtRenewpass.Name = "txtRenewpass"
-        Me.txtRenewpass.PasswordChar = Microsoft.VisualBasic.ChrW(42)
-        Me.txtRenewpass.Size = New System.Drawing.Size(256, 23)
+        Me.txtRenewpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtRenewpass.Size = New System.Drawing.Size(308, 30)
         Me.txtRenewpass.TabIndex = 4
-        Me.txtRenewpass.Text = ""
         '
         'txtNewpass
         '
-        Me.txtNewpass.Location = New System.Drawing.Point(160, 72)
+        Me.txtNewpass.Location = New System.Drawing.Point(196, 83)
         Me.txtNewpass.Name = "txtNewpass"
-        Me.txtNewpass.PasswordChar = Microsoft.VisualBasic.ChrW(42)
-        Me.txtNewpass.Size = New System.Drawing.Size(256, 23)
+        Me.txtNewpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtNewpass.Size = New System.Drawing.Size(307, 30)
         Me.txtNewpass.TabIndex = 3
-        Me.txtNewpass.Text = ""
         '
         'Label5
         '
-        Me.Label5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 72)
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(25, 83)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(80, 23)
+        Me.Label5.Size = New System.Drawing.Size(96, 27)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Mật Khẩu"
         '
         'txtNewuser
         '
-        Me.txtNewuser.Location = New System.Drawing.Point(160, 32)
+        Me.txtNewuser.Location = New System.Drawing.Point(196, 38)
         Me.txtNewuser.Name = "txtNewuser"
-        Me.txtNewuser.Size = New System.Drawing.Size(256, 23)
+        Me.txtNewuser.Size = New System.Drawing.Size(307, 30)
         Me.txtNewuser.TabIndex = 1
-        Me.txtNewuser.Text = ""
         '
         'Label4
         '
-        Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(8, 32)
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(25, 41)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(144, 23)
+        Me.Label4.Size = New System.Drawing.Size(172, 26)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Tên Người Sử Dụng"
         '
         'btnDoi
         '
         Me.btnDoi.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDoi.Location = New System.Drawing.Point(180, 328)
+        Me.btnDoi.Location = New System.Drawing.Point(150, 378)
         Me.btnDoi.Name = "btnDoi"
-        Me.btnDoi.Size = New System.Drawing.Size(80, 24)
+        Me.btnDoi.Size = New System.Drawing.Size(96, 28)
         Me.btnDoi.TabIndex = 3
         Me.btnDoi.Text = "Đổi"
         '
         'btnDong
         '
         Me.btnDong.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDong.Location = New System.Drawing.Point(324, 328)
+        Me.btnDong.Location = New System.Drawing.Point(340, 378)
         Me.btnDong.Name = "btnDong"
-        Me.btnDong.Size = New System.Drawing.Size(80, 24)
+        Me.btnDong.Size = New System.Drawing.Size(96, 28)
         Me.btnDong.TabIndex = 4
         Me.btnDong.Text = "Đóng"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Bitmap)
-        Me.PictureBox1.Location = New System.Drawing.Point(176, 10)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(150, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(40, 32)
+        Me.PictureBox1.Size = New System.Drawing.Size(33, 36)
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
+        'txtOldpass
+        '
+        Me.txtOldpass.Location = New System.Drawing.Point(195, 70)
+        Me.txtOldpass.Name = "txtOldpass"
+        Me.txtOldpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtOldpass.Size = New System.Drawing.Size(307, 30)
+        Me.txtOldpass.TabIndex = 2
+        '
+        'txtOlduser
+        '
+        Me.txtOlduser.Location = New System.Drawing.Point(196, 29)
+        Me.txtOlduser.Name = "txtOlduser"
+        Me.txtOlduser.Size = New System.Drawing.Size(307, 30)
+        Me.txtOlduser.TabIndex = 0
+        '
         'frmChangepass
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(584, 377)
-        Me.Controls.AddRange(New System.Windows.Forms.Control() {Me.PictureBox1, Me.btnDong, Me.btnDoi, Me.GroupBox2, Me.GroupBox1, Me.Label1})
+        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.ClientSize = New System.Drawing.Size(584, 424)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btnDong)
+        Me.Controls.Add(Me.btnDoi)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmChangepass"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Thay Đổi Mật Khẩu"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -351,7 +364,7 @@ Public Class frmChangepass
 
     Private Sub btnDoi_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDoi.Click
         If Me.txtOlduser.Text = "" Then
-            If MessageBox.Show("Bạn Hãy Nhập Tên Người Dùng Cũ .", "Xin Chào !", MessageBoxButtons.OK, MessageBoxIcon.Information) = MsgBoxResult.OK Then
+            If MessageBox.Show("Bạn Hãy Nhập Tên Người Dùng Cũ .", "Xin Chào !", MessageBoxButtons.OK, MessageBoxIcon.Information) = MsgBoxResult.Ok Then
                 Me.txtOlduser.Focus()
                 Exit Sub
             End If
@@ -387,5 +400,17 @@ Public Class frmChangepass
 
     Private Sub btnDong_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDong.Click
         Me.Hide()
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub txtOldpass_TextChanged(sender As Object, e As EventArgs) Handles txtOldpass.TextChanged
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class

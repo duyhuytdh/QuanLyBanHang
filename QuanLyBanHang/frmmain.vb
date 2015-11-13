@@ -76,10 +76,6 @@ Public Class frmMain
 
     Friend WithEvents MainMenu1 As System.Windows.Forms.MainMenu
     Friend WithEvents mnuNHOMMH As System.Windows.Forms.MenuItem
-    Friend WithEvents StatusBar As System.Windows.Forms.StatusBar
-    Friend WithEvents A As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents B As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents C As System.Windows.Forms.StatusBarPanel
     Friend WithEvents ntfIcon As System.Windows.Forms.NotifyIcon
     Friend WithEvents mnuChangepass As System.Windows.Forms.MenuItem
     Friend WithEvents mnuMathang As System.Windows.Forms.MenuItem
@@ -119,8 +115,6 @@ Public Class frmMain
     Friend WithEvents MenuItem4 As System.Windows.Forms.MenuItem
     Friend WithEvents ToolBarButton10 As System.Windows.Forms.ToolBarButton
     Friend WithEvents ToolBarButton14 As System.Windows.Forms.ToolBarButton
-    Friend WithEvents StatusBarPanel1 As System.Windows.Forms.StatusBarPanel
-    Friend WithEvents StatusBarPanel2 As System.Windows.Forms.StatusBarPanel
     Friend WithEvents mnuTroGiup As System.Windows.Forms.MenuItem
     Friend WithEvents mnuBanHang2 As System.Windows.Forms.MenuItem
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
@@ -138,9 +132,9 @@ Public Class frmMain
         Me.mnuNCC = New System.Windows.Forms.MenuItem()
         Me.mnuKhach = New System.Windows.Forms.MenuItem()
         Me.mnuNhapXuat = New System.Windows.Forms.MenuItem()
+        Me.mnuBanHang2 = New System.Windows.Forms.MenuItem()
         Me.mnuCTNHAP = New System.Windows.Forms.MenuItem()
         Me.mnuCTXUAT = New System.Windows.Forms.MenuItem()
-        Me.mnuBanHang2 = New System.Windows.Forms.MenuItem()
         Me.mnuReports = New System.Windows.Forms.MenuItem()
         Me.mnuHelp = New System.Windows.Forms.MenuItem()
         Me.mnuTroGiup = New System.Windows.Forms.MenuItem()
@@ -149,12 +143,6 @@ Public Class frmMain
         Me.MenuItem2 = New System.Windows.Forms.MenuItem()
         Me.MenuItem3 = New System.Windows.Forms.MenuItem()
         Me.MenuItem4 = New System.Windows.Forms.MenuItem()
-        Me.StatusBar = New System.Windows.Forms.StatusBar()
-        Me.StatusBarPanel2 = New System.Windows.Forms.StatusBarPanel()
-        Me.B = New System.Windows.Forms.StatusBarPanel()
-        Me.C = New System.Windows.Forms.StatusBarPanel()
-        Me.A = New System.Windows.Forms.StatusBarPanel()
-        Me.StatusBarPanel1 = New System.Windows.Forms.StatusBarPanel()
         Me.ToolBar1 = New System.Windows.Forms.ToolBar()
         Me.ToolBarButton1 = New System.Windows.Forms.ToolBarButton()
         Me.ToolBarButton2 = New System.Windows.Forms.ToolBarButton()
@@ -177,11 +165,6 @@ Public Class frmMain
         Me.DirectoryEntry1 = New System.DirectoryServices.DirectoryEntry()
         Me.Timer_Stop = New System.Timers.Timer()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.B, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.C, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.A, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Timer_Stop, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -249,6 +232,11 @@ Public Class frmMain
         Me.mnuNhapXuat.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuBanHang2, Me.mnuCTNHAP, Me.mnuCTXUAT})
         Me.mnuNhapXuat.Text = "Nhập Xuất Hàng"
         '
+        'mnuBanHang2
+        '
+        Me.mnuBanHang2.Index = 0
+        Me.mnuBanHang2.Text = "Bán Hàng"
+        '
         'mnuCTNHAP
         '
         Me.mnuCTNHAP.Index = 1
@@ -260,11 +248,6 @@ Public Class frmMain
         Me.mnuCTXUAT.Index = 2
         Me.mnuCTXUAT.Shortcut = System.Windows.Forms.Shortcut.CtrlX
         Me.mnuCTXUAT.Text = "Chứng Từ Xuất Hàng"
-        '
-        'mnuBanHang2
-        '
-        Me.mnuBanHang2.Index = 0
-        Me.mnuBanHang2.Text = "Bán Hàng"
         '
         'mnuReports
         '
@@ -310,48 +293,6 @@ Public Class frmMain
         '
         Me.MenuItem4.Index = 2
         Me.MenuItem4.Text = ""
-        '
-        'StatusBar
-        '
-        Me.StatusBar.Location = New System.Drawing.Point(0, 342)
-        Me.StatusBar.Name = "StatusBar"
-        Me.StatusBar.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.StatusBarPanel2, Me.B, Me.C, Me.A, Me.StatusBarPanel1})
-        Me.StatusBar.ShowPanels = True
-        Me.StatusBar.Size = New System.Drawing.Size(624, 26)
-        Me.StatusBar.TabIndex = 3
-        Me.StatusBar.Text = "StatusBar1"
-        '
-        'StatusBarPanel2
-        '
-        Me.StatusBarPanel2.Name = "StatusBarPanel2"
-        Me.StatusBarPanel2.Text = "CopyRight : Đinh Đức Hoàng"
-        Me.StatusBarPanel2.ToolTipText = "Người Viết Chương Trình"
-        Me.StatusBarPanel2.Width = 170
-        '
-        'B
-        '
-        Me.B.Name = "B"
-        Me.B.Text = "Email : ThaiNguyenKing81@yahoo.com"
-        Me.B.ToolTipText = "Địa Chỉ Email Của Tác Giả"
-        Me.B.Width = 200
-        '
-        'C
-        '
-        Me.C.Name = "C"
-        Me.C.Text = "Tel : 0280.822253"
-        Me.C.ToolTipText = "Số Điện Thoại Liên Hệ Với Tác Giả"
-        '
-        'A
-        '
-        Me.A.Name = "A"
-        Me.A.ToolTipText = "Ngày Được Tính Theo Dương Lịch"
-        Me.A.Width = 150
-        '
-        'StatusBarPanel1
-        '
-        Me.StatusBarPanel1.Name = "StatusBarPanel1"
-        Me.StatusBarPanel1.Text = "Ready"
-        Me.StatusBarPanel1.ToolTipText = "Chương Trình Đã Sẵn Sàng Làm Việc"
         '
         'ToolBar1
         '
@@ -546,9 +487,9 @@ Public Class frmMain
         'frmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.BackgroundImage = Global.Hoang.My.Resources.Resources.haiduongvuivn12052012a
         Me.ClientSize = New System.Drawing.Size(624, 368)
         Me.Controls.Add(Me.ToolBar1)
-        Me.Controls.Add(Me.StatusBar)
         Me.HelpButton = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
@@ -557,11 +498,6 @@ Public Class frmMain
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Chương Trình  Bán Hàng"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.StatusBarPanel2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.B, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.C, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.A, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.StatusBarPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Timer_Stop, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -744,6 +680,14 @@ Public Class frmMain
         frmBanHang2 = New frmBanHang2()
         frmBanHang2.MdiParent = Me
         frmBanHang2.Show()
+
+    End Sub
+
+    Private Sub MenuItem4_Click(sender As Object, e As EventArgs) Handles MenuItem4.Click
+
+    End Sub
+
+    Private Sub MenuItem2_Click(sender As Object, e As EventArgs) Handles MenuItem2.Click
 
     End Sub
 End Class

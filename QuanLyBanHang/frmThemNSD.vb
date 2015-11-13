@@ -59,7 +59,7 @@ Public Class frmThemNSD
         '
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(106, 37)
+        Me.Label1.Location = New System.Drawing.Point(96, 37)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(508, 37)
         Me.Label1.TabIndex = 0
@@ -67,8 +67,8 @@ Public Class frmThemNSD
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(50, 160)
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(98, 160)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 27)
         Me.Label3.TabIndex = 2
@@ -77,7 +77,7 @@ Public Class frmThemNSD
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(240, 111)
+        Me.txtUser.Location = New System.Drawing.Point(270, 111)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(259, 27)
         Me.txtUser.TabIndex = 3
@@ -85,7 +85,7 @@ Public Class frmThemNSD
         'txtPass
         '
         Me.txtPass.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(240, 157)
+        Me.txtPass.Location = New System.Drawing.Point(270, 157)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass.Size = New System.Drawing.Size(259, 27)
@@ -103,10 +103,10 @@ Public Class frmThemNSD
         '
         'btnGhi
         '
-        Me.btnGhi.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGhi.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGhi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnGhi.ImageList = Me.ImageList1
-        Me.btnGhi.Location = New System.Drawing.Point(240, 209)
+        Me.btnGhi.Location = New System.Drawing.Point(202, 211)
         Me.btnGhi.Name = "btnGhi"
         Me.btnGhi.Size = New System.Drawing.Size(115, 37)
         Me.btnGhi.TabIndex = 8
@@ -115,16 +115,16 @@ Public Class frmThemNSD
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(38, 18)
+        Me.PictureBox1.Location = New System.Drawing.Point(44, 29)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox1.Size = New System.Drawing.Size(52, 45)
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(50, 114)
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(98, 114)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(184, 27)
         Me.Label2.TabIndex = 1
@@ -132,10 +132,10 @@ Public Class frmThemNSD
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.ImageList = Me.ImageList1
-        Me.Button1.Location = New System.Drawing.Point(383, 209)
+        Me.Button1.Location = New System.Drawing.Point(345, 211)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 37)
         Me.Button1.TabIndex = 12

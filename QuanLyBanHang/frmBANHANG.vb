@@ -80,7 +80,7 @@ Public Class frmBANHANG
     Friend WithEvents ImgBANHANG As System.Windows.Forms.ImageList
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmBANHANG))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBANHANG))
         Me.C = New System.Windows.Forms.Label()
         Me.lstboxHangBan = New System.Windows.Forms.ListBox()
         Me.lstboxHangMua = New System.Windows.Forms.ListBox()
@@ -108,254 +108,253 @@ Public Class frmBANHANG
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cbNV = New System.Windows.Forms.ComboBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'C
         '
-        Me.C.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.C.ForeColor = System.Drawing.Color.FromArgb(CType(0, Byte), CType(64, Byte), CType(0, Byte))
-        Me.C.Location = New System.Drawing.Point(54, 8)
+        Me.C.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.C.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.C.Location = New System.Drawing.Point(70, 9)
         Me.C.Name = "C"
-        Me.C.Size = New System.Drawing.Size(252, 32)
+        Me.C.Size = New System.Drawing.Size(302, 37)
         Me.C.TabIndex = 0
         Me.C.Text = "Chương Trình Bán Hàng"
         '
         'lstboxHangBan
         '
         Me.lstboxHangBan.ColumnWidth = 500
-        Me.lstboxHangBan.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstboxHangBan.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstboxHangBan.HorizontalScrollbar = True
-        Me.lstboxHangBan.ItemHeight = 16
-        Me.lstboxHangBan.Location = New System.Drawing.Point(16, 68)
+        Me.lstboxHangBan.ItemHeight = 22
+        Me.lstboxHangBan.Location = New System.Drawing.Point(19, 85)
         Me.lstboxHangBan.Name = "lstboxHangBan"
         Me.lstboxHangBan.ScrollAlwaysVisible = True
-        Me.lstboxHangBan.Size = New System.Drawing.Size(752, 196)
+        Me.lstboxHangBan.Size = New System.Drawing.Size(794, 202)
         Me.lstboxHangBan.Sorted = True
         Me.lstboxHangBan.TabIndex = 1
         '
         'lstboxHangMua
         '
-        Me.lstboxHangMua.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstboxHangMua.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstboxHangMua.HorizontalScrollbar = True
-        Me.lstboxHangMua.Location = New System.Drawing.Point(456, 293)
+        Me.lstboxHangMua.ItemHeight = 22
+        Me.lstboxHangMua.Location = New System.Drawing.Point(571, 338)
         Me.lstboxHangMua.Name = "lstboxHangMua"
         Me.lstboxHangMua.ScrollAlwaysVisible = True
-        Me.lstboxHangMua.Size = New System.Drawing.Size(312, 160)
+        Me.lstboxHangMua.Size = New System.Drawing.Size(244, 180)
         Me.lstboxHangMua.TabIndex = 2
         '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 282)
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(186, 331)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 24)
+        Me.Label2.Size = New System.Drawing.Size(48, 28)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Số Lượng "
         '
         'txtSLMUA
         '
-        Me.txtSLMUA.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSLMUA.Location = New System.Drawing.Point(80, 282)
+        Me.txtSLMUA.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSLMUA.Location = New System.Drawing.Point(230, 326)
         Me.txtSLMUA.Name = "txtSLMUA"
-        Me.txtSLMUA.Size = New System.Drawing.Size(112, 22)
+        Me.txtSLMUA.Size = New System.Drawing.Size(84, 26)
         Me.txtSLMUA.TabIndex = 4
-        Me.txtSLMUA.Text = ""
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(31, 360)
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(35, 408)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(152, 23)
+        Me.Label3.Size = New System.Drawing.Size(183, 27)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Phần Trăm Triết Khấu"
         '
         'txtTONGTIEN
         '
-        Me.txtTONGTIEN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTONGTIEN.Location = New System.Drawing.Point(192, 320)
+        Me.txtTONGTIEN.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTONGTIEN.Location = New System.Drawing.Point(230, 365)
         Me.txtTONGTIEN.Name = "txtTONGTIEN"
-        Me.txtTONGTIEN.Size = New System.Drawing.Size(256, 22)
+        Me.txtTONGTIEN.Size = New System.Drawing.Size(308, 26)
         Me.txtTONGTIEN.TabIndex = 6
-        Me.txtTONGTIEN.Text = ""
         '
         'ImgBANHANG
         '
-        Me.ImgBANHANG.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ImgBANHANG.ImageSize = New System.Drawing.Size(16, 16)
         Me.ImgBANHANG.ImageStream = CType(resources.GetObject("ImgBANHANG.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImgBANHANG.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImgBANHANG.Images.SetKeyName(0, "")
+        Me.ImgBANHANG.Images.SetKeyName(1, "")
+        Me.ImgBANHANG.Images.SetKeyName(2, "")
+        Me.ImgBANHANG.Images.SetKeyName(3, "")
+        Me.ImgBANHANG.Images.SetKeyName(4, "")
+        Me.ImgBANHANG.Images.SetKeyName(5, "")
         '
         'btnDongY
         '
-        Me.btnDongY.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDongY.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDongY.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDongY.ImageList = Me.ImgBANHANG
-        Me.btnDongY.Location = New System.Drawing.Point(232, 427)
+        Me.btnDongY.Location = New System.Drawing.Point(290, 485)
         Me.btnDongY.Name = "btnDongY"
-        Me.btnDongY.Size = New System.Drawing.Size(96, 24)
+        Me.btnDongY.Size = New System.Drawing.Size(116, 37)
         Me.btnDongY.TabIndex = 8
         Me.btnDongY.Text = "Đồng Ý"
         '
         'Label4
         '
-        Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(62, 328)
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(74, 368)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(120, 18)
+        Me.Label4.Size = New System.Drawing.Size(144, 21)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Tổng Thành Tiền"
         '
         'txtTRIETKHAU
         '
-        Me.txtTRIETKHAU.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTRIETKHAU.Location = New System.Drawing.Point(192, 352)
+        Me.txtTRIETKHAU.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTRIETKHAU.Location = New System.Drawing.Point(230, 406)
         Me.txtTRIETKHAU.Name = "txtTRIETKHAU"
-        Me.txtTRIETKHAU.Size = New System.Drawing.Size(112, 22)
+        Me.txtTRIETKHAU.Size = New System.Drawing.Size(135, 26)
         Me.txtTRIETKHAU.TabIndex = 10
-        Me.txtTRIETKHAU.Text = ""
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(9, 47)
+        Me.Label1.Location = New System.Drawing.Point(11, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(160, 16)
+        Me.Label1.Size = New System.Drawing.Size(192, 24)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = " Các Mặt Hàng Bán"
         '
         'Label5
         '
-        Me.Label5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(520, 273)
+        Me.Label5.Location = New System.Drawing.Point(596, 305)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(184, 16)
+        Me.Label5.Size = New System.Drawing.Size(228, 25)
         Me.Label5.TabIndex = 12
         Me.Label5.Text = " Các Mặt Hàng Khách Mua"
         '
         'btnDong
         '
-        Me.btnDong.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDong.Location = New System.Drawing.Point(344, 427)
+        Me.btnDong.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDong.Location = New System.Drawing.Point(423, 484)
         Me.btnDong.Name = "btnDong"
-        Me.btnDong.Size = New System.Drawing.Size(96, 24)
+        Me.btnDong.Size = New System.Drawing.Size(115, 37)
         Me.btnDong.TabIndex = 13
         Me.btnDong.Text = "Đóng"
         '
         'btnMua
         '
-        Me.btnMua.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMua.Location = New System.Drawing.Point(224, 282)
+        Me.btnMua.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMua.Location = New System.Drawing.Point(342, 325)
         Me.btnMua.Name = "btnMua"
-        Me.btnMua.Size = New System.Drawing.Size(88, 24)
+        Me.btnMua.Size = New System.Drawing.Size(84, 28)
         Me.btnMua.TabIndex = 14
         Me.btnMua.Text = "Mua"
         '
         'btnTraLai
         '
-        Me.btnTraLai.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTraLai.Location = New System.Drawing.Point(344, 282)
+        Me.btnTraLai.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTraLai.Location = New System.Drawing.Point(454, 325)
         Me.btnTraLai.Name = "btnTraLai"
-        Me.btnTraLai.Size = New System.Drawing.Size(88, 24)
+        Me.btnTraLai.Size = New System.Drawing.Size(84, 28)
         Me.btnTraLai.TabIndex = 15
         Me.btnTraLai.Text = "Trả Lại"
         '
         'Label6
         '
-        Me.Label6.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(510, 6)
+        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(581, 18)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(119, 16)
+        Me.Label6.Size = New System.Drawing.Size(143, 18)
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Số Hoá Đơn Bán"
         '
         'txtSOHDBAN
         '
-        Me.txtSOHDBAN.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSOHDBAN.Location = New System.Drawing.Point(623, 6)
+        Me.txtSOHDBAN.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSOHDBAN.Location = New System.Drawing.Point(689, 15)
         Me.txtSOHDBAN.Name = "txtSOHDBAN"
-        Me.txtSOHDBAN.Size = New System.Drawing.Size(144, 22)
+        Me.txtSOHDBAN.Size = New System.Drawing.Size(124, 26)
         Me.txtSOHDBAN.TabIndex = 17
-        Me.txtSOHDBAN.Text = ""
         '
         'btnHuy
         '
-        Me.btnHuy.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHuy.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnHuy.ImageList = Me.ImgBANHANG
-        Me.btnHuy.Location = New System.Drawing.Point(8, 427)
+        Me.btnHuy.Location = New System.Drawing.Point(24, 484)
         Me.btnHuy.Name = "btnHuy"
-        Me.btnHuy.Size = New System.Drawing.Size(96, 24)
+        Me.btnHuy.Size = New System.Drawing.Size(115, 37)
         Me.btnHuy.TabIndex = 18
         Me.btnHuy.Text = "Huỷ Bỏ"
         '
         'txtNGAYB
         '
-        Me.txtNGAYB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNGAYB.Location = New System.Drawing.Point(384, 6)
+        Me.txtNGAYB.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNGAYB.Location = New System.Drawing.Point(455, 16)
         Me.txtNGAYB.Name = "txtNGAYB"
-        Me.txtNGAYB.Size = New System.Drawing.Size(118, 22)
+        Me.txtNGAYB.Size = New System.Drawing.Size(114, 26)
         Me.txtNGAYB.TabIndex = 19
-        Me.txtNGAYB.Text = ""
         '
         'Label7
         '
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(313, 6)
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(353, 18)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 23)
+        Me.Label7.Size = New System.Drawing.Size(93, 26)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "Ngày Bán"
         '
         'btnTHEM
         '
-        Me.btnTHEM.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTHEM.Image = CType(resources.GetObject("btnTHEM.Image"), System.Drawing.Bitmap)
+        Me.btnTHEM.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTHEM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnTHEM.ImageIndex = 0
         Me.btnTHEM.ImageList = Me.ImgBANHANG
-        Me.btnTHEM.Location = New System.Drawing.Point(120, 427)
+        Me.btnTHEM.Location = New System.Drawing.Point(159, 484)
         Me.btnTHEM.Name = "btnTHEM"
-        Me.btnTHEM.Size = New System.Drawing.Size(95, 24)
+        Me.btnTHEM.Size = New System.Drawing.Size(114, 37)
         Me.btnTHEM.TabIndex = 21
         Me.btnTHEM.Text = "Thêm Mới"
         Me.btnTHEM.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txtTIENSAUTK
         '
-        Me.txtTIENSAUTK.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTIENSAUTK.Location = New System.Drawing.Point(192, 384)
+        Me.txtTIENSAUTK.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTIENSAUTK.Location = New System.Drawing.Point(230, 443)
         Me.txtTIENSAUTK.Name = "txtTIENSAUTK"
-        Me.txtTIENSAUTK.Size = New System.Drawing.Size(256, 22)
+        Me.txtTIENSAUTK.Size = New System.Drawing.Size(308, 26)
         Me.txtTIENSAUTK.TabIndex = 22
-        Me.txtTIENSAUTK.Text = ""
         '
         'Label8
         '
-        Me.Label8.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(0, 392)
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(0, 446)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(188, 23)
+        Me.Label8.Size = New System.Drawing.Size(226, 27)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = "Tổng  Tiền Sau Triết Khấu"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Bitmap)
-        Me.PictureBox1.Location = New System.Drawing.Point(8, 0)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(21, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(48, 40)
+        Me.PictureBox1.Size = New System.Drawing.Size(57, 46)
         Me.PictureBox1.TabIndex = 24
         Me.PictureBox1.TabStop = False
         '
         'Label9
         '
-        Me.Label9.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(312, 40)
+        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(353, 53)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(144, 23)
+        Me.Label9.Size = New System.Drawing.Size(173, 27)
         Me.Label9.TabIndex = 26
         Me.Label9.Text = "Nhân Viên Bán Hàng"
         '
@@ -363,22 +362,50 @@ Public Class frmBANHANG
         '
         Me.cbNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbNV.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbNV.Location = New System.Drawing.Point(456, 36)
+        Me.cbNV.Location = New System.Drawing.Point(528, 50)
         Me.cbNV.Name = "cbNV"
-        Me.cbNV.Size = New System.Drawing.Size(312, 24)
+        Me.cbNV.Size = New System.Drawing.Size(285, 26)
         Me.cbNV.Sorted = True
         Me.cbNV.TabIndex = 27
         '
         'frmBANHANG
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(784, 473)
-        Me.Controls.AddRange(New System.Windows.Forms.Control() {Me.cbNV, Me.Label9, Me.PictureBox1, Me.Label8, Me.txtTIENSAUTK, Me.btnTHEM, Me.Label7, Me.txtNGAYB, Me.btnHuy, Me.txtSOHDBAN, Me.Label6, Me.btnTraLai, Me.btnMua, Me.btnDong, Me.Label5, Me.Label1, Me.txtTRIETKHAU, Me.Label4, Me.btnDongY, Me.txtTONGTIEN, Me.Label3, Me.txtSLMUA, Me.Label2, Me.lstboxHangMua, Me.lstboxHangBan, Me.C})
+        Me.AutoScaleBaseSize = New System.Drawing.Size(9, 23)
+        Me.ClientSize = New System.Drawing.Size(840, 536)
+        Me.Controls.Add(Me.cbNV)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.txtTIENSAUTK)
+        Me.Controls.Add(Me.btnTHEM)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtNGAYB)
+        Me.Controls.Add(Me.btnHuy)
+        Me.Controls.Add(Me.txtSOHDBAN)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.btnTraLai)
+        Me.Controls.Add(Me.btnMua)
+        Me.Controls.Add(Me.btnDong)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtTRIETKHAU)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.btnDongY)
+        Me.Controls.Add(Me.txtTONGTIEN)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtSLMUA)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lstboxHangMua)
+        Me.Controls.Add(Me.lstboxHangBan)
+        Me.Controls.Add(Me.C)
+        Me.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmBANHANG"
         Me.Text = "Bán Hàng"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

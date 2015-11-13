@@ -112,7 +112,7 @@ Public Class frmKhach
         Me.Grb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Grb1.Location = New System.Drawing.Point(21, 10)
         Me.Grb1.Name = "Grb1"
-        Me.Grb1.Size = New System.Drawing.Size(894, 490)
+        Me.Grb1.Size = New System.Drawing.Size(872, 490)
         Me.Grb1.TabIndex = 4
         Me.Grb1.TabStop = False
         '
@@ -257,7 +257,7 @@ Public Class frmKhach
         '
         'cmdClose
         '
-        Me.cmdClose.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdClose.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdClose.Location = New System.Drawing.Point(642, 410)
         Me.cmdClose.Name = "cmdClose"
         Me.cmdClose.Size = New System.Drawing.Size(123, 30)
@@ -266,7 +266,7 @@ Public Class frmKhach
         '
         'cmdDelete
         '
-        Me.cmdDelete.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdDelete.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdDelete.Location = New System.Drawing.Point(467, 410)
         Me.cmdDelete.Name = "cmdDelete"
         Me.cmdDelete.Size = New System.Drawing.Size(124, 30)
@@ -275,7 +275,7 @@ Public Class frmKhach
         '
         'cmdNew1
         '
-        Me.cmdNew1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdNew1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdNew1.Location = New System.Drawing.Point(117, 410)
         Me.cmdNew1.Name = "cmdNew1"
         Me.cmdNew1.Size = New System.Drawing.Size(124, 30)
@@ -284,7 +284,7 @@ Public Class frmKhach
         '
         'cmdUpdate
         '
-        Me.cmdUpdate.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdUpdate.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdUpdate.Location = New System.Drawing.Point(292, 410)
         Me.cmdUpdate.Name = "cmdUpdate"
         Me.cmdUpdate.Size = New System.Drawing.Size(124, 30)
@@ -295,18 +295,18 @@ Public Class frmKhach
         '
         Me.dgView.CaptionText = "Danh Sách Các Khách Hàng Chính"
         Me.dgView.DataMember = ""
-        Me.dgView.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgView.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgView.GridLineColor = System.Drawing.Color.Maroon
         Me.dgView.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.dgView.Location = New System.Drawing.Point(5, 70)
+        Me.dgView.Location = New System.Drawing.Point(0, 67)
         Me.dgView.Name = "dgView"
-        Me.dgView.Size = New System.Drawing.Size(885, 310)
+        Me.dgView.Size = New System.Drawing.Size(850, 310)
         Me.dgView.TabIndex = 14
         '
         'Label5
         '
-        Me.Label5.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(216, 20)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(571, 40)
@@ -334,13 +334,13 @@ Public Class frmKhach
         Me.Grb2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Grb2.Location = New System.Drawing.Point(21, 10)
         Me.Grb2.Name = "Grb2"
-        Me.Grb2.Size = New System.Drawing.Size(918, 465)
+        Me.Grb2.Size = New System.Drawing.Size(872, 465)
         Me.Grb2.TabIndex = 5
         Me.Grb2.TabStop = False
         '
         'frmKhach
         '
-        Me.ClientSize = New System.Drawing.Size(951, 464)
+        Me.ClientSize = New System.Drawing.Size(892, 464)
         Me.Controls.Add(Me.Grb2)
         Me.Controls.Add(Me.Grb1)
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
