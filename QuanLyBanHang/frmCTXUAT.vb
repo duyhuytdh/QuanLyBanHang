@@ -1162,7 +1162,6 @@ Public Class frmCTXUAT
         GetData()
 
         iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-        Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
 
         If power = "NHAP" Or power = "BAN" Then
             Me.cmdSua.Enabled = False
@@ -1269,7 +1268,6 @@ Public Class frmCTXUAT
         Me.cbThang.Text = ""
         Me.cbNam.Text = ""
         iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-        Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
     End Sub
 
     Private Sub rMa_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rMa.CheckedChanged
@@ -1279,7 +1277,6 @@ Public Class frmCTXUAT
         Me.cbNam.Enabled = False
         Me.txtCTN.Enabled = True
         iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-        Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
     End Sub
 
     Private Sub rAll_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rAll.CheckedChanged
@@ -1293,7 +1290,6 @@ Public Class frmCTXUAT
         Me.txtCTN.Enabled = False
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-        Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
     End Sub
 
     Private Sub cbNgay_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNgay.SelectedIndexChanged
@@ -1310,26 +1306,24 @@ Public Class frmCTXUAT
         End If
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-        Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
     End Sub
 
     Private Sub cbThang_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbThang.SelectedIndexChanged
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-        Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
+
     End Sub
 
     Private Sub cbNam_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNam.SelectedIndexChanged
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-        Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
+
     End Sub
 
     Private Sub txtCTN_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCTN.KeyPress
         If e.KeyChar = Chr(13) Then
             GetData()
             iRscount = Me.BindingContext(dsDataSet, "tblHDBAN").Count
-            Me.lblSHDBAN.Text = "Tổng Số Hoá Đơn Bán : " & iRscount
         End If
     End Sub
 

@@ -1446,7 +1446,7 @@ Public Class frmCTNHAP
         fillcbDate()
         Me.rAll.Checked = True
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
+
         If power = "BAN" Then
             Me.cmdThemCTN.Enabled = False
             Me.btnSuaCTN.Enabled = False
@@ -1803,7 +1803,6 @@ Public Class frmCTNHAP
         GetData()
 
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
 
     End Sub
 
@@ -1814,7 +1813,6 @@ Public Class frmCTNHAP
         Me.cbThang.Enabled = False
         Me.cbNam.Enabled = False
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
 
     End Sub
 
@@ -1827,38 +1825,33 @@ Public Class frmCTNHAP
         Me.cbThang.Text = ""
         Me.cbNam.Text = ""
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
     End Sub
 
     Private Sub tabCTN_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tabCTN.SelectedIndexChanged
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
     End Sub
 
     Private Sub cbThang_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbThang.SelectedIndexChanged
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
     End Sub
 
     Private Sub cbNam_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNam.SelectedIndexChanged
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
     End Sub
 
     Private Sub txtCTN_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtCTN.KeyPress
         If e.KeyChar = Chr(13) Then
             GetData()
             iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-            Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
+
         End If
     End Sub
     Private Sub cbNgay_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbNgay.SelectedIndexChanged
         GetData()
         iRscount = Me.BindingContext(dsDataSet, "tblCTNHAP").Count
-        Me.lblSOCTN.Text = "Tổng Số Chứng Từ Nhập : " & iRscount
     End Sub
 
     Private Sub btnSuaCTN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSuaCTN.Click

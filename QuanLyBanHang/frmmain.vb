@@ -487,7 +487,7 @@ Public Class frmMain
         'frmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
-        Me.BackgroundImage = Global.Hoang.My.Resources.Resources.haiduongvuivn12052012a
+        Me.BackgroundImage = Global.Hoang.My.Resources.Resources._1458626_617099768348382_165194338_n
         Me.ClientSize = New System.Drawing.Size(624, 368)
         Me.Controls.Add(Me.ToolBar1)
         Me.HelpButton = True
@@ -516,7 +516,6 @@ Public Class frmMain
         xNgay = CStr(Microsoft.VisualBasic.Day(DateString))
         xThang = CStr(Microsoft.VisualBasic.Month(DateString))
         xNam = CStr(Microsoft.VisualBasic.Year(DateString))
-        Me.StatusBar.Panels.Item(3).Text = "Hôm Nay Ngày : " & xNgay & "-" & xThang & "-" & xNam
         'Timer_Stop.Enabled = True
         'childform2 = New frmLogin()
         'childform2.ShowDialog()
