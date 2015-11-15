@@ -158,6 +158,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyBanHangDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanHangDataSet1.xsd</DependentUpon>
+    </Compile>
     <Content Include="9.ICO" />
     <Compile Include="AssemblyInfo.vb">
       <SubType>Code</SubType>
@@ -221,6 +226,17 @@
       <DependentUpon>HOANGDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="QuanLyBanHangDataSet1.xsc">
+      <DependentUpon>QuanLyBanHangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyBanHangDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyBanHangDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyBanHangDataSet1.xss">
+      <DependentUpon>QuanLyBanHangDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\13363508121722379311_574_574.jpg" />
     <None Include="Resources\1458626_617099768348382_165194338_n.jpg" />
     <None Include="QuanLyBanHangDataSet.xsc">

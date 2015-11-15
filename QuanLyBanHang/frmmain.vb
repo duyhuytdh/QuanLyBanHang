@@ -540,7 +540,7 @@ Public Class frmMain
             Me.mnuThemNguoiSD.Enabled = False
             Me.toolbtnThemNSD.Visible = False
         End If
-        strconn = "Data Source=DuyHuy-PC\SQLEXPRESS2008R2;Initial Catalog=HOANG;User ID=sa;Password=sa"
+        strconn = "Data Source=PC\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True"
     End Sub
 
     Private Sub mnuNHOMMH_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnuNHOMMH.Click

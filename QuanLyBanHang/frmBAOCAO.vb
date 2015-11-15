@@ -200,7 +200,7 @@ Public Class frmBAOCAO
         Me.csVIEW.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.csVIEW.Location = New System.Drawing.Point(214, 58)
         Me.csVIEW.Name = "csVIEW"
-        Me.csVIEW.Size = New System.Drawing.Size(862, 513)
+        Me.csVIEW.Size = New System.Drawing.Size(962, 572)
         Me.csVIEW.TabIndex = 14
         '
         'Label1
@@ -235,7 +235,7 @@ Public Class frmBAOCAO
         'frmBAOCAO
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(1088, 570)
+        Me.ClientSize = New System.Drawing.Size(1188, 642)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
@@ -386,7 +386,7 @@ Public Class frmBAOCAO
         End If
 
         Dim path As String = ""
-        path = "E:\08. Source\VisualBasic\QuanLyBanHang\trunk\QuanLyBanHang\Rpt\"
+        path = "F:\QuanLyBanHang\trunk\QuanLyBanHang\Rpt\"
         Dim strProc As String = ""
         Dim bool As Boolean = True
 
