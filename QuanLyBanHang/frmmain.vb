@@ -22,6 +22,7 @@ Public Class frmMain
     Private WithEvents frmBanHang As frmBanHang
     Private WithEvents frmTTSP As frmTTSP
     Private WithEvents frmThemNSD As frmThemNSD
+    Friend WithEvents MenuItem5 As System.Windows.Forms.MenuItem
     'Private WithEvents Hoang_Help As  
     Dim childform2 As frmLogin
 
@@ -165,6 +166,7 @@ Public Class frmMain
         Me.DirectoryEntry1 = New System.DirectoryServices.DirectoryEntry()
         Me.Timer_Stop = New System.Timers.Timer()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.MenuItem5 = New System.Windows.Forms.MenuItem()
         CType(Me.Timer_Stop, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -252,6 +254,7 @@ Public Class frmMain
         'mnuReports
         '
         Me.mnuReports.Index = 3
+        Me.mnuReports.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem5})
         Me.mnuReports.Text = "&Báo Cáo"
         '
         'mnuHelp
@@ -484,6 +487,11 @@ Public Class frmMain
         Me.Timer_Stop.Interval = 15000.0R
         Me.Timer_Stop.SynchronizingObject = Me
         '
+        'MenuItem5
+        '
+        Me.MenuItem5.Index = 0
+        Me.MenuItem5.Text = "Báo cáo"
+        '
         'frmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
@@ -594,10 +602,14 @@ Public Class frmMain
                 frmBanHang2.Show()
                 frmBanHang2.StartPosition = FormStartPosition.CenterParent
             Case 10
+                frmBAOCAO = New frmBAOCAO()
+                frmBAOCAO.MdiParent = Me
+                frmBAOCAO.Show()
+            Case 11
                 frmTTSP = New frmTTSP()
                 frmTTSP.MdiParent = Me
                 frmTTSP.Show()
-            Case 11
+            Case 12
                 'Dim AppPath As String = System.Reflection.Assembly.GetExecutingAssembly.Location
                 Dim url As String = ""
                 url = "\DoAn_Hoang_VBNET\Hoang_Help.chm"
@@ -688,5 +700,10 @@ Public Class frmMain
 
     Private Sub MenuItem2_Click(sender As Object, e As EventArgs) Handles MenuItem2.Click
 
+    End Sub
+
+    Private Sub MenuItem5_Click(sender As Object, e As EventArgs) Handles MenuItem5.Click
+        frmBAOCAO.MdiParent = Me
+        frmBAOCAO.Show()
     End Sub
 End Class

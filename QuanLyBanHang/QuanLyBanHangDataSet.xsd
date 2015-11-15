@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="QuanLyBanHangConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyBanHangConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Hoang.My.MySettings.GlobalReference.Default.QuanLyBanHangConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="QuanLyBanHangConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyBanHangConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyBanHang.My.MySettings.GlobalReference.Default.QuanLyBanHangConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblBANTableAdapter" GeneratorDataComponentClassName="tblBANTableAdapter" Name="tblBAN" UserDataComponentName="tblBANTableAdapter">
@@ -598,7 +598,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
   <xs:element name="QuanLyBanHangDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QuanLyBanHangDataSet" msprop:Generator_UserDSName="QuanLyBanHangDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tblBAN" msprop:Generator_TableClassName="tblBANDataTable" msprop:Generator_TableVarName="tabletblBAN" msprop:Generator_TablePropName="tblBAN" msprop:Generator_RowDeletingName="tblBANRowDeleting" msprop:Generator_RowChangingName="tblBANRowChanging" msprop:Generator_RowEvHandlerName="tblBANRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBANRowDeleted" msprop:Generator_UserTableName="tblBAN" msprop:Generator_RowChangedName="tblBANRowChanged" msprop:Generator_RowEvArgName="tblBANRowChangeEvent" msprop:Generator_RowClassName="tblBANRow">
+        <xs:element name="tblBAN" msprop:Generator_TableClassName="tblBANDataTable" msprop:Generator_TableVarName="tabletblBAN" msprop:Generator_RowChangedName="tblBANRowChanged" msprop:Generator_TablePropName="tblBAN" msprop:Generator_RowDeletingName="tblBANRowDeleting" msprop:Generator_RowChangingName="tblBANRowChanging" msprop:Generator_RowEvHandlerName="tblBANRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBANRowDeleted" msprop:Generator_RowClassName="tblBANRow" msprop:Generator_UserTableName="tblBAN" msprop:Generator_RowEvArgName="tblBANRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="SOHDBAN" msprop:Generator_ColumnVarNameInTable="columnSOHDBAN" msprop:Generator_ColumnPropNameInRow="SOHDBAN" msprop:Generator_ColumnPropNameInTable="SOHDBANColumn" msprop:Generator_UserColumnName="SOHDBAN" minOccurs="0">
@@ -620,7 +620,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblBAOCAO" msprop:Generator_TableClassName="tblBAOCAODataTable" msprop:Generator_TableVarName="tabletblBAOCAO" msprop:Generator_TablePropName="tblBAOCAO" msprop:Generator_RowDeletingName="tblBAOCAORowDeleting" msprop:Generator_RowChangingName="tblBAOCAORowChanging" msprop:Generator_RowEvHandlerName="tblBAOCAORowChangeEventHandler" msprop:Generator_RowDeletedName="tblBAOCAORowDeleted" msprop:Generator_UserTableName="tblBAOCAO" msprop:Generator_RowChangedName="tblBAOCAORowChanged" msprop:Generator_RowEvArgName="tblBAOCAORowChangeEvent" msprop:Generator_RowClassName="tblBAOCAORow">
+        <xs:element name="tblBAOCAO" msprop:Generator_TableClassName="tblBAOCAODataTable" msprop:Generator_TableVarName="tabletblBAOCAO" msprop:Generator_RowChangedName="tblBAOCAORowChanged" msprop:Generator_TablePropName="tblBAOCAO" msprop:Generator_RowDeletingName="tblBAOCAORowDeleting" msprop:Generator_RowChangingName="tblBAOCAORowChanging" msprop:Generator_RowEvHandlerName="tblBAOCAORowChangeEventHandler" msprop:Generator_RowDeletedName="tblBAOCAORowDeleted" msprop:Generator_RowClassName="tblBAOCAORow" msprop:Generator_UserTableName="tblBAOCAO" msprop:Generator_RowEvArgName="tblBAOCAORowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -641,7 +641,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblCTNHAP" msprop:Generator_TableClassName="tblCTNHAPDataTable" msprop:Generator_TableVarName="tabletblCTNHAP" msprop:Generator_TablePropName="tblCTNHAP" msprop:Generator_RowDeletingName="tblCTNHAPRowDeleting" msprop:Generator_RowChangingName="tblCTNHAPRowChanging" msprop:Generator_RowEvHandlerName="tblCTNHAPRowChangeEventHandler" msprop:Generator_RowDeletedName="tblCTNHAPRowDeleted" msprop:Generator_UserTableName="tblCTNHAP" msprop:Generator_RowChangedName="tblCTNHAPRowChanged" msprop:Generator_RowEvArgName="tblCTNHAPRowChangeEvent" msprop:Generator_RowClassName="tblCTNHAPRow">
+        <xs:element name="tblCTNHAP" msprop:Generator_TableClassName="tblCTNHAPDataTable" msprop:Generator_TableVarName="tabletblCTNHAP" msprop:Generator_RowChangedName="tblCTNHAPRowChanged" msprop:Generator_TablePropName="tblCTNHAP" msprop:Generator_RowDeletingName="tblCTNHAPRowDeleting" msprop:Generator_RowChangingName="tblCTNHAPRowChanging" msprop:Generator_RowEvHandlerName="tblCTNHAPRowChangeEventHandler" msprop:Generator_RowDeletedName="tblCTNHAPRowDeleted" msprop:Generator_RowClassName="tblCTNHAPRow" msprop:Generator_UserTableName="tblCTNHAP" msprop:Generator_RowEvArgName="tblCTNHAPRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="SOCTN" msprop:Generator_ColumnVarNameInTable="columnSOCTN" msprop:Generator_ColumnPropNameInRow="SOCTN" msprop:Generator_ColumnPropNameInTable="SOCTNColumn" msprop:Generator_UserColumnName="SOCTN">
@@ -673,7 +673,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblHANGBAN" msprop:Generator_TableClassName="tblHANGBANDataTable" msprop:Generator_TableVarName="tabletblHANGBAN" msprop:Generator_TablePropName="tblHANGBAN" msprop:Generator_RowDeletingName="tblHANGBANRowDeleting" msprop:Generator_RowChangingName="tblHANGBANRowChanging" msprop:Generator_RowEvHandlerName="tblHANGBANRowChangeEventHandler" msprop:Generator_RowDeletedName="tblHANGBANRowDeleted" msprop:Generator_UserTableName="tblHANGBAN" msprop:Generator_RowChangedName="tblHANGBANRowChanged" msprop:Generator_RowEvArgName="tblHANGBANRowChangeEvent" msprop:Generator_RowClassName="tblHANGBANRow">
+        <xs:element name="tblHANGBAN" msprop:Generator_TableClassName="tblHANGBANDataTable" msprop:Generator_TableVarName="tabletblHANGBAN" msprop:Generator_RowChangedName="tblHANGBANRowChanged" msprop:Generator_TablePropName="tblHANGBAN" msprop:Generator_RowDeletingName="tblHANGBANRowDeleting" msprop:Generator_RowChangingName="tblHANGBANRowChanging" msprop:Generator_RowEvHandlerName="tblHANGBANRowChangeEventHandler" msprop:Generator_RowDeletedName="tblHANGBANRowDeleted" msprop:Generator_RowClassName="tblHANGBANRow" msprop:Generator_UserTableName="tblHANGBAN" msprop:Generator_RowEvArgName="tblHANGBANRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Tên_x0020_Mặt_x0020_Hàng" msprop:Generator_ColumnVarNameInTable="columnTên_Mặt_Hàng" msprop:Generator_ColumnPropNameInRow="Tên_Mặt_Hàng" msprop:Generator_ColumnPropNameInTable="Tên_Mặt_HàngColumn" msprop:Generator_UserColumnName="Tên Mặt Hàng" minOccurs="0">
@@ -701,7 +701,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblHDBAN" msprop:Generator_TableClassName="tblHDBANDataTable" msprop:Generator_TableVarName="tabletblHDBAN" msprop:Generator_TablePropName="tblHDBAN" msprop:Generator_RowDeletingName="tblHDBANRowDeleting" msprop:Generator_RowChangingName="tblHDBANRowChanging" msprop:Generator_RowEvHandlerName="tblHDBANRowChangeEventHandler" msprop:Generator_RowDeletedName="tblHDBANRowDeleted" msprop:Generator_UserTableName="tblHDBAN" msprop:Generator_RowChangedName="tblHDBANRowChanged" msprop:Generator_RowEvArgName="tblHDBANRowChangeEvent" msprop:Generator_RowClassName="tblHDBANRow">
+        <xs:element name="tblHDBAN" msprop:Generator_TableClassName="tblHDBANDataTable" msprop:Generator_TableVarName="tabletblHDBAN" msprop:Generator_RowChangedName="tblHDBANRowChanged" msprop:Generator_TablePropName="tblHDBAN" msprop:Generator_RowDeletingName="tblHDBANRowDeleting" msprop:Generator_RowChangingName="tblHDBANRowChanging" msprop:Generator_RowEvHandlerName="tblHDBANRowChangeEventHandler" msprop:Generator_RowDeletedName="tblHDBANRowDeleted" msprop:Generator_RowClassName="tblHDBANRow" msprop:Generator_UserTableName="tblHDBAN" msprop:Generator_RowEvArgName="tblHDBANRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="SOHDBAN" msprop:Generator_ColumnVarNameInTable="columnSOHDBAN" msprop:Generator_ColumnPropNameInRow="SOHDBAN" msprop:Generator_ColumnPropNameInTable="SOHDBANColumn" msprop:Generator_UserColumnName="SOHDBAN">
@@ -724,7 +724,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblHoaDon_Tam" msprop:Generator_TableClassName="tblHoaDon_TamDataTable" msprop:Generator_TableVarName="tabletblHoaDon_Tam" msprop:Generator_TablePropName="tblHoaDon_Tam" msprop:Generator_RowDeletingName="tblHoaDon_TamRowDeleting" msprop:Generator_RowChangingName="tblHoaDon_TamRowChanging" msprop:Generator_RowEvHandlerName="tblHoaDon_TamRowChangeEventHandler" msprop:Generator_RowDeletedName="tblHoaDon_TamRowDeleted" msprop:Generator_UserTableName="tblHoaDon_Tam" msprop:Generator_RowChangedName="tblHoaDon_TamRowChanged" msprop:Generator_RowEvArgName="tblHoaDon_TamRowChangeEvent" msprop:Generator_RowClassName="tblHoaDon_TamRow">
+        <xs:element name="tblHoaDon_Tam" msprop:Generator_TableClassName="tblHoaDon_TamDataTable" msprop:Generator_TableVarName="tabletblHoaDon_Tam" msprop:Generator_RowChangedName="tblHoaDon_TamRowChanged" msprop:Generator_TablePropName="tblHoaDon_Tam" msprop:Generator_RowDeletingName="tblHoaDon_TamRowDeleting" msprop:Generator_RowChangingName="tblHoaDon_TamRowChanging" msprop:Generator_RowEvHandlerName="tblHoaDon_TamRowChangeEventHandler" msprop:Generator_RowDeletedName="tblHoaDon_TamRowDeleted" msprop:Generator_RowClassName="tblHoaDon_TamRow" msprop:Generator_UserTableName="tblHoaDon_Tam" msprop:Generator_RowEvArgName="tblHoaDon_TamRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TENMH" msprop:Generator_ColumnVarNameInTable="columnTENMH" msprop:Generator_ColumnPropNameInRow="TENMH" msprop:Generator_ColumnPropNameInTable="TENMHColumn" msprop:Generator_UserColumnName="TENMH" minOccurs="0">
@@ -740,7 +740,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblKHACH" msprop:Generator_TableClassName="tblKHACHDataTable" msprop:Generator_TableVarName="tabletblKHACH" msprop:Generator_TablePropName="tblKHACH" msprop:Generator_RowDeletingName="tblKHACHRowDeleting" msprop:Generator_RowChangingName="tblKHACHRowChanging" msprop:Generator_RowEvHandlerName="tblKHACHRowChangeEventHandler" msprop:Generator_RowDeletedName="tblKHACHRowDeleted" msprop:Generator_UserTableName="tblKHACH" msprop:Generator_RowChangedName="tblKHACHRowChanged" msprop:Generator_RowEvArgName="tblKHACHRowChangeEvent" msprop:Generator_RowClassName="tblKHACHRow">
+        <xs:element name="tblKHACH" msprop:Generator_TableClassName="tblKHACHDataTable" msprop:Generator_TableVarName="tabletblKHACH" msprop:Generator_RowChangedName="tblKHACHRowChanged" msprop:Generator_TablePropName="tblKHACH" msprop:Generator_RowDeletingName="tblKHACHRowDeleting" msprop:Generator_RowChangingName="tblKHACHRowChanging" msprop:Generator_RowEvHandlerName="tblKHACHRowChangeEventHandler" msprop:Generator_RowDeletedName="tblKHACHRowDeleted" msprop:Generator_RowClassName="tblKHACHRow" msprop:Generator_UserTableName="tblKHACH" msprop:Generator_RowEvArgName="tblKHACHRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MAKHACH" msprop:Generator_ColumnVarNameInTable="columnMAKHACH" msprop:Generator_ColumnPropNameInRow="MAKHACH" msprop:Generator_ColumnPropNameInTable="MAKHACHColumn" msprop:Generator_UserColumnName="MAKHACH">
@@ -781,7 +781,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblMATHANG" msprop:Generator_TableClassName="tblMATHANGDataTable" msprop:Generator_TableVarName="tabletblMATHANG" msprop:Generator_TablePropName="tblMATHANG" msprop:Generator_RowDeletingName="tblMATHANGRowDeleting" msprop:Generator_RowChangingName="tblMATHANGRowChanging" msprop:Generator_RowEvHandlerName="tblMATHANGRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMATHANGRowDeleted" msprop:Generator_UserTableName="tblMATHANG" msprop:Generator_RowChangedName="tblMATHANGRowChanged" msprop:Generator_RowEvArgName="tblMATHANGRowChangeEvent" msprop:Generator_RowClassName="tblMATHANGRow">
+        <xs:element name="tblMATHANG" msprop:Generator_TableClassName="tblMATHANGDataTable" msprop:Generator_TableVarName="tabletblMATHANG" msprop:Generator_RowChangedName="tblMATHANGRowChanged" msprop:Generator_TablePropName="tblMATHANG" msprop:Generator_RowDeletingName="tblMATHANGRowDeleting" msprop:Generator_RowChangingName="tblMATHANGRowChanging" msprop:Generator_RowEvHandlerName="tblMATHANGRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMATHANGRowDeleted" msprop:Generator_RowClassName="tblMATHANGRow" msprop:Generator_UserTableName="tblMATHANG" msprop:Generator_RowEvArgName="tblMATHANGRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MAMH" msprop:Generator_ColumnVarNameInTable="columnMAMH" msprop:Generator_ColumnPropNameInRow="MAMH" msprop:Generator_ColumnPropNameInTable="MAMHColumn" msprop:Generator_UserColumnName="MAMH">
@@ -816,7 +816,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblNCC" msprop:Generator_TableClassName="tblNCCDataTable" msprop:Generator_TableVarName="tabletblNCC" msprop:Generator_TablePropName="tblNCC" msprop:Generator_RowDeletingName="tblNCCRowDeleting" msprop:Generator_RowChangingName="tblNCCRowChanging" msprop:Generator_RowEvHandlerName="tblNCCRowChangeEventHandler" msprop:Generator_RowDeletedName="tblNCCRowDeleted" msprop:Generator_UserTableName="tblNCC" msprop:Generator_RowChangedName="tblNCCRowChanged" msprop:Generator_RowEvArgName="tblNCCRowChangeEvent" msprop:Generator_RowClassName="tblNCCRow">
+        <xs:element name="tblNCC" msprop:Generator_TableClassName="tblNCCDataTable" msprop:Generator_TableVarName="tabletblNCC" msprop:Generator_RowChangedName="tblNCCRowChanged" msprop:Generator_TablePropName="tblNCC" msprop:Generator_RowDeletingName="tblNCCRowDeleting" msprop:Generator_RowChangingName="tblNCCRowChanging" msprop:Generator_RowEvHandlerName="tblNCCRowChangeEventHandler" msprop:Generator_RowDeletedName="tblNCCRowDeleted" msprop:Generator_RowClassName="tblNCCRow" msprop:Generator_UserTableName="tblNCC" msprop:Generator_RowEvArgName="tblNCCRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MANCC" msprop:Generator_ColumnVarNameInTable="columnMANCC" msprop:Generator_ColumnPropNameInRow="MANCC" msprop:Generator_ColumnPropNameInTable="MANCCColumn" msprop:Generator_UserColumnName="MANCC">
@@ -857,7 +857,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblNHAPKHO" msprop:Generator_TableClassName="tblNHAPKHODataTable" msprop:Generator_TableVarName="tabletblNHAPKHO" msprop:Generator_TablePropName="tblNHAPKHO" msprop:Generator_RowDeletingName="tblNHAPKHORowDeleting" msprop:Generator_RowChangingName="tblNHAPKHORowChanging" msprop:Generator_RowEvHandlerName="tblNHAPKHORowChangeEventHandler" msprop:Generator_RowDeletedName="tblNHAPKHORowDeleted" msprop:Generator_UserTableName="tblNHAPKHO" msprop:Generator_RowChangedName="tblNHAPKHORowChanged" msprop:Generator_RowEvArgName="tblNHAPKHORowChangeEvent" msprop:Generator_RowClassName="tblNHAPKHORow">
+        <xs:element name="tblNHAPKHO" msprop:Generator_TableClassName="tblNHAPKHODataTable" msprop:Generator_TableVarName="tabletblNHAPKHO" msprop:Generator_RowChangedName="tblNHAPKHORowChanged" msprop:Generator_TablePropName="tblNHAPKHO" msprop:Generator_RowDeletingName="tblNHAPKHORowDeleting" msprop:Generator_RowChangingName="tblNHAPKHORowChanging" msprop:Generator_RowEvHandlerName="tblNHAPKHORowChangeEventHandler" msprop:Generator_RowDeletedName="tblNHAPKHORowDeleted" msprop:Generator_RowClassName="tblNHAPKHORow" msprop:Generator_UserTableName="tblNHAPKHO" msprop:Generator_RowEvArgName="tblNHAPKHORowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="SOCTN" msprop:Generator_ColumnVarNameInTable="columnSOCTN" msprop:Generator_ColumnPropNameInRow="SOCTN" msprop:Generator_ColumnPropNameInTable="SOCTNColumn" msprop:Generator_UserColumnName="SOCTN">
@@ -879,7 +879,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblNHOMMH" msprop:Generator_TableClassName="tblNHOMMHDataTable" msprop:Generator_TableVarName="tabletblNHOMMH" msprop:Generator_TablePropName="tblNHOMMH" msprop:Generator_RowDeletingName="tblNHOMMHRowDeleting" msprop:Generator_RowChangingName="tblNHOMMHRowChanging" msprop:Generator_RowEvHandlerName="tblNHOMMHRowChangeEventHandler" msprop:Generator_RowDeletedName="tblNHOMMHRowDeleted" msprop:Generator_UserTableName="tblNHOMMH" msprop:Generator_RowChangedName="tblNHOMMHRowChanged" msprop:Generator_RowEvArgName="tblNHOMMHRowChangeEvent" msprop:Generator_RowClassName="tblNHOMMHRow">
+        <xs:element name="tblNHOMMH" msprop:Generator_TableClassName="tblNHOMMHDataTable" msprop:Generator_TableVarName="tabletblNHOMMH" msprop:Generator_RowChangedName="tblNHOMMHRowChanged" msprop:Generator_TablePropName="tblNHOMMH" msprop:Generator_RowDeletingName="tblNHOMMHRowDeleting" msprop:Generator_RowChangingName="tblNHOMMHRowChanging" msprop:Generator_RowEvHandlerName="tblNHOMMHRowChangeEventHandler" msprop:Generator_RowDeletedName="tblNHOMMHRowDeleted" msprop:Generator_RowClassName="tblNHOMMHRow" msprop:Generator_UserTableName="tblNHOMMH" msprop:Generator_RowEvArgName="tblNHOMMHRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MANHOM" msprop:Generator_ColumnVarNameInTable="columnMANHOM" msprop:Generator_ColumnPropNameInRow="MANHOM" msprop:Generator_ColumnPropNameInTable="MANHOMColumn" msprop:Generator_UserColumnName="MANHOM">
@@ -899,7 +899,7 @@ SELECT MANHOM, TENNHOM FROM tblNHOMMH WHERE (MANHOM = @MANHOM)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tblPassword" msprop:Generator_TableClassName="tblPasswordDataTable" msprop:Generator_TableVarName="tabletblPassword" msprop:Generator_TablePropName="tblPassword" msprop:Generator_RowDeletingName="tblPasswordRowDeleting" msprop:Generator_RowChangingName="tblPasswordRowChanging" msprop:Generator_RowEvHandlerName="tblPasswordRowChangeEventHandler" msprop:Generator_RowDeletedName="tblPasswordRowDeleted" msprop:Generator_UserTableName="tblPassword" msprop:Generator_RowChangedName="tblPasswordRowChanged" msprop:Generator_RowEvArgName="tblPasswordRowChangeEvent" msprop:Generator_RowClassName="tblPasswordRow">
+        <xs:element name="tblPassword" msprop:Generator_TableClassName="tblPasswordDataTable" msprop:Generator_TableVarName="tabletblPassword" msprop:Generator_RowChangedName="tblPasswordRowChanged" msprop:Generator_TablePropName="tblPassword" msprop:Generator_RowDeletingName="tblPasswordRowDeleting" msprop:Generator_RowChangingName="tblPasswordRowChanging" msprop:Generator_RowEvHandlerName="tblPasswordRowChangeEventHandler" msprop:Generator_RowDeletedName="tblPasswordRowDeleted" msprop:Generator_RowClassName="tblPasswordRow" msprop:Generator_UserTableName="tblPassword" msprop:Generator_RowEvArgName="tblPasswordRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">

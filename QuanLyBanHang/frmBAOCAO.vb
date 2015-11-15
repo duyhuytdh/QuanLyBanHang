@@ -378,9 +378,6 @@ Public Class frmBAOCAO
             Case "rptNHOMMH.rpt"
                 Me.csVIEW.ReportSource = path & xTen
                 Me.csVIEW.RefreshReport()
-            Case "rptNUOC.rpt"
-                Me.csVIEW.ReportSource = path & xTen
-                Me.csVIEW.RefreshReport()
             Case "rptNCC.rpt"
                 Me.csVIEW.ReportSource = path & xTen
                 Me.csVIEW.RefreshReport()
