@@ -52,7 +52,7 @@ Public Class frmBAOCAO
     Friend WithEvents TtipBC As System.Windows.Forms.ToolTip
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmBAOCAO))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBAOCAO))
         Me.cmbMonth = New System.Windows.Forms.ComboBox()
         Me.cmbQuater = New System.Windows.Forms.ComboBox()
         Me.cmbYear = New System.Windows.Forms.ComboBox()
@@ -71,12 +71,13 @@ Public Class frmBAOCAO
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TtipBC = New System.Windows.Forms.ToolTip(Me.components)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cmbMonth
         '
         Me.cmbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbMonth.Location = New System.Drawing.Point(64, 48)
+        Me.cmbMonth.Location = New System.Drawing.Point(90, 88)
         Me.cmbMonth.Name = "cmbMonth"
         Me.cmbMonth.Size = New System.Drawing.Size(112, 21)
         Me.cmbMonth.TabIndex = 1
@@ -84,7 +85,7 @@ Public Class frmBAOCAO
         'cmbQuater
         '
         Me.cmbQuater.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbQuater.Location = New System.Drawing.Point(64, 80)
+        Me.cmbQuater.Location = New System.Drawing.Point(90, 120)
         Me.cmbQuater.Name = "cmbQuater"
         Me.cmbQuater.Size = New System.Drawing.Size(112, 21)
         Me.cmbQuater.TabIndex = 2
@@ -92,7 +93,7 @@ Public Class frmBAOCAO
         'cmbYear
         '
         Me.cmbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbYear.Location = New System.Drawing.Point(64, 112)
+        Me.cmbYear.Location = New System.Drawing.Point(90, 152)
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(112, 21)
         Me.cmbYear.TabIndex = 3
@@ -100,16 +101,16 @@ Public Class frmBAOCAO
         'optMonth
         '
         Me.optMonth.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optMonth.Location = New System.Drawing.Point(64, 136)
+        Me.optMonth.Location = New System.Drawing.Point(18, 58)
         Me.optMonth.Name = "optMonth"
-        Me.optMonth.Size = New System.Drawing.Size(72, 24)
+        Me.optMonth.Size = New System.Drawing.Size(75, 24)
         Me.optMonth.TabIndex = 4
         Me.optMonth.Text = "Tháng"
         '
         'optQuater
         '
         Me.optQuater.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optQuater.Location = New System.Drawing.Point(64, 160)
+        Me.optQuater.Location = New System.Drawing.Point(90, 58)
         Me.optQuater.Name = "optQuater"
         Me.optQuater.Size = New System.Drawing.Size(56, 24)
         Me.optQuater.TabIndex = 5
@@ -118,7 +119,7 @@ Public Class frmBAOCAO
         'optYear
         '
         Me.optYear.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.optYear.Location = New System.Drawing.Point(64, 184)
+        Me.optYear.Location = New System.Drawing.Point(152, 58)
         Me.optYear.Name = "optYear"
         Me.optYear.Size = New System.Drawing.Size(56, 24)
         Me.optYear.TabIndex = 6
@@ -127,7 +128,7 @@ Public Class frmBAOCAO
         'lstReport
         '
         Me.lstReport.HorizontalScrollbar = True
-        Me.lstReport.Location = New System.Drawing.Point(7, 232)
+        Me.lstReport.Location = New System.Drawing.Point(9, 226)
         Me.lstReport.Name = "lstReport"
         Me.lstReport.ScrollAlwaysVisible = True
         Me.lstReport.Size = New System.Drawing.Size(194, 199)
@@ -137,55 +138,56 @@ Public Class frmBAOCAO
         'btnDong
         '
         Me.btnDong.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDong.Location = New System.Drawing.Point(112, 440)
+        Me.btnDong.Location = New System.Drawing.Point(114, 434)
         Me.btnDong.Name = "btnDong"
+        Me.btnDong.Size = New System.Drawing.Size(75, 23)
         Me.btnDong.TabIndex = 8
         Me.btnDong.Text = "Đóng"
         '
         'btnOK
         '
         Me.btnOK.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnOK.Image = CType(resources.GetObject("btnOK.Image"), System.Drawing.Bitmap)
         Me.btnOK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnOK.ImageIndex = 1
         Me.btnOK.ImageList = Me.ImageList1
-        Me.btnOK.Location = New System.Drawing.Point(16, 440)
+        Me.btnOK.Location = New System.Drawing.Point(18, 434)
         Me.btnOK.Name = "btnOK"
+        Me.btnOK.Size = New System.Drawing.Size(75, 23)
         Me.btnOK.TabIndex = 9
         Me.btnOK.Text = "OK"
         Me.TtipBC.SetToolTip(Me.btnOK, "Nhấn OK Sau Khi Chọn Một Mẫu Báo Cáo")
         '
         'ImageList1
         '
-        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
         Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "")
+        Me.ImageList1.Images.SetKeyName(1, "")
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(16, 48)
+        Me.Label2.Location = New System.Drawing.Point(15, 89)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 23)
+        Me.Label2.Size = New System.Drawing.Size(61, 23)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Tháng"
         '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(16, 112)
+        Me.Label3.Location = New System.Drawing.Point(18, 153)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 23)
+        Me.Label3.Size = New System.Drawing.Size(47, 23)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Năm"
         '
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 80)
+        Me.Label4.Location = New System.Drawing.Point(18, 118)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 23)
+        Me.Label4.Size = New System.Drawing.Size(50, 23)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Quý"
         '
@@ -193,26 +195,27 @@ Public Class frmBAOCAO
         '
         Me.csVIEW.ActiveViewIndex = -1
         Me.csVIEW.AutoScroll = True
+        Me.csVIEW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.csVIEW.Cursor = System.Windows.Forms.Cursors.Default
         Me.csVIEW.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.csVIEW.Location = New System.Drawing.Point(208, 8)
+        Me.csVIEW.Location = New System.Drawing.Point(214, 58)
         Me.csVIEW.Name = "csVIEW"
-        Me.csVIEW.ReportSource = Nothing
-        Me.csVIEW.Size = New System.Drawing.Size(568, 456)
+        Me.csVIEW.Size = New System.Drawing.Size(862, 513)
         Me.csVIEW.TabIndex = 14
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(0, Byte), CType(64, Byte), CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(24, 8)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(160, 32)
         Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Các Báo Cáo"
+        Me.Label1.Text = "Báo Cáo"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Bitmap)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(8, 14)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
@@ -222,7 +225,7 @@ Public Class frmBAOCAO
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(16, 200)
+        Me.Label5.Location = New System.Drawing.Point(18, 194)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(168, 32)
         Me.Label5.TabIndex = 17
@@ -232,12 +235,28 @@ Public Class frmBAOCAO
         'frmBAOCAO
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(784, 479)
-        Me.Controls.AddRange(New System.Windows.Forms.Control() {Me.Label5, Me.PictureBox1, Me.Label1, Me.csVIEW, Me.Label4, Me.Label3, Me.Label2, Me.btnOK, Me.btnDong, Me.lstReport, Me.optYear, Me.optQuater, Me.optMonth, Me.cmbYear, Me.cmbQuater, Me.cmbMonth})
+        Me.ClientSize = New System.Drawing.Size(1088, 570)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.csVIEW)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnOK)
+        Me.Controls.Add(Me.btnDong)
+        Me.Controls.Add(Me.lstReport)
+        Me.Controls.Add(Me.optYear)
+        Me.Controls.Add(Me.optQuater)
+        Me.Controls.Add(Me.optMonth)
+        Me.Controls.Add(Me.cmbYear)
+        Me.Controls.Add(Me.cmbQuater)
+        Me.Controls.Add(Me.cmbMonth)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmBAOCAO"
         Me.Text = "Báo Cáo "
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -367,7 +386,7 @@ Public Class frmBAOCAO
         End If
 
         Dim path As String = ""
-        path = "\DoAn_Hoang_VBNET\Rpt\"
+        path = "E:\08. Source\VisualBasic\QuanLyBanHang\trunk\QuanLyBanHang\Rpt\"
         Dim strProc As String = ""
         Dim bool As Boolean = True
 
@@ -503,6 +522,30 @@ Public Class frmBAOCAO
                 clock()
             End If
         End If
+
+    End Sub
+
+    Private Sub cmbMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMonth.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub cmbYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbYear.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmbQuater_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbQuater.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
 End Class
