@@ -19,7 +19,6 @@ Public Class frmMain
     Private WithEvents frmCTNHAP As frmCTNHAP
     Private WithEvents frmCTXUAT As frmCTXUAT
     Private WithEvents frmBanHang2 As frmBanHang2
-    Private WithEvents frmBanHang As frmBanHang
     Private WithEvents frmTTSP As frmTTSP
     Private WithEvents frmThemNSD As frmThemNSD
     Friend WithEvents MenuItem5 As System.Windows.Forms.MenuItem
@@ -110,10 +109,6 @@ Public Class frmMain
     Friend WithEvents toolbtnBan As System.Windows.Forms.ToolBarButton
     Friend WithEvents mnuThemNguoiSD As System.Windows.Forms.MenuItem
     Friend WithEvents toolbtnThemNSD As System.Windows.Forms.ToolBarButton
-    Friend WithEvents MenuItem1 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem3 As System.Windows.Forms.MenuItem
-    Friend WithEvents MenuItem4 As System.Windows.Forms.MenuItem
     Friend WithEvents ToolBarButton10 As System.Windows.Forms.ToolBarButton
     Friend WithEvents ToolBarButton14 As System.Windows.Forms.ToolBarButton
     Friend WithEvents mnuTroGiup As System.Windows.Forms.MenuItem
@@ -137,13 +132,10 @@ Public Class frmMain
         Me.mnuCTNHAP = New System.Windows.Forms.MenuItem()
         Me.mnuCTXUAT = New System.Windows.Forms.MenuItem()
         Me.mnuReports = New System.Windows.Forms.MenuItem()
+        Me.MenuItem5 = New System.Windows.Forms.MenuItem()
         Me.mnuHelp = New System.Windows.Forms.MenuItem()
         Me.mnuTroGiup = New System.Windows.Forms.MenuItem()
         Me.mnuTTSP = New System.Windows.Forms.MenuItem()
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem()
-        Me.MenuItem2 = New System.Windows.Forms.MenuItem()
-        Me.MenuItem3 = New System.Windows.Forms.MenuItem()
-        Me.MenuItem4 = New System.Windows.Forms.MenuItem()
         Me.ToolBar1 = New System.Windows.Forms.ToolBar()
         Me.ToolBarButton1 = New System.Windows.Forms.ToolBarButton()
         Me.ToolBarButton2 = New System.Windows.Forms.ToolBarButton()
@@ -166,7 +158,6 @@ Public Class frmMain
         Me.DirectoryEntry1 = New System.DirectoryServices.DirectoryEntry()
         Me.Timer_Stop = New System.Timers.Timer()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.MenuItem5 = New System.Windows.Forms.MenuItem()
         CType(Me.Timer_Stop, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -257,10 +248,15 @@ Public Class frmMain
         Me.mnuReports.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem5})
         Me.mnuReports.Text = "&Báo Cáo"
         '
+        'MenuItem5
+        '
+        Me.MenuItem5.Index = 0
+        Me.MenuItem5.Text = "Báo cáo"
+        '
         'mnuHelp
         '
         Me.mnuHelp.Index = 4
-        Me.mnuHelp.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuTroGiup, Me.mnuTTSP, Me.MenuItem1})
+        Me.mnuHelp.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuTroGiup, Me.mnuTTSP})
         Me.mnuHelp.Text = "Trợ &Giúp"
         '
         'mnuTroGiup
@@ -274,28 +270,6 @@ Public Class frmMain
         Me.mnuTTSP.Index = 1
         Me.mnuTTSP.Shortcut = System.Windows.Forms.Shortcut.F2
         Me.mnuTTSP.Text = "Thông Tin Về &Sản Phẩm"
-        '
-        'MenuItem1
-        '
-        Me.MenuItem1.Index = 2
-        Me.MenuItem1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem2, Me.MenuItem3, Me.MenuItem4})
-        Me.MenuItem1.Shortcut = System.Windows.Forms.Shortcut.F3
-        Me.MenuItem1.Text = "Tìm Kiếm"
-        '
-        'MenuItem2
-        '
-        Me.MenuItem2.Index = 0
-        Me.MenuItem2.Text = "Hoá Đơn bán Hàng"
-        '
-        'MenuItem3
-        '
-        Me.MenuItem3.Index = 1
-        Me.MenuItem3.Text = "Hoá Đơn Nhập Hàng"
-        '
-        'MenuItem4
-        '
-        Me.MenuItem4.Index = 2
-        Me.MenuItem4.Text = ""
         '
         'ToolBar1
         '
@@ -487,14 +461,10 @@ Public Class frmMain
         Me.Timer_Stop.Interval = 15000.0R
         Me.Timer_Stop.SynchronizingObject = Me
         '
-        'MenuItem5
-        '
-        Me.MenuItem5.Index = 0
-        Me.MenuItem5.Text = "Báo cáo"
-        '
         'frmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.BackgroundImage = Global.QuanLyBanHang.My.Resources.Resources.background1
         Me.ClientSize = New System.Drawing.Size(624, 368)
         Me.Controls.Add(Me.ToolBar1)
         Me.HelpButton = True
@@ -612,7 +582,7 @@ Public Class frmMain
             Case 12
                 'Dim AppPath As String = System.Reflection.Assembly.GetExecutingAssembly.Location
                 Dim url As String = ""
-                url = "\DoAn_Hoang_VBNET\Hoang_Help.chm"
+                url = "F:\QuanLyBanHang\trunk\QuanLyBanHang\QuanLyBanHang_Help.chm"
                 'url = AppPath & url
                 Help.ShowHelp(Me, url)
 
@@ -648,11 +618,6 @@ Public Class frmMain
         frmCTXUAT.Show()
     End Sub
 
-    Private Sub mnuBanHang_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        frmBanHang = New frmBANHANG()
-        frmBanHang.MdiParent = Me
-        frmBanHang.Show()
-    End Sub
     Private Sub mnuThoat_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuThoat.Click
         If MessageBox.Show("Bạn Có Thật Sự Muốn Thoát Khỏi Hệ Thống Không ?", "Thông Báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
             End
@@ -681,7 +646,7 @@ Public Class frmMain
     Private Sub mnuTroGiup_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuTroGiup.Click
         'Dim AppPath As String = System.Reflection.Assembly.GetExecutingAssembly.Location
         Dim url As String = ""
-        url = "\DoAn_Hoang_VBNET\Hoang_Help.chm"
+        url = "F:\QuanLyBanHang\trunk\QuanLyBanHang\QuanLyBanHang_Help.chm"
         'url = AppPath & url
         Help.ShowHelp(Me, url)
     End Sub
@@ -694,11 +659,11 @@ Public Class frmMain
 
     End Sub
 
-    Private Sub MenuItem4_Click(sender As Object, e As EventArgs) Handles MenuItem4.Click
+    Private Sub MenuItem4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub MenuItem2_Click(sender As Object, e As EventArgs) Handles MenuItem2.Click
+    Private Sub MenuItem2_Click(sender As Object, e As EventArgs)
 
     End Sub
 

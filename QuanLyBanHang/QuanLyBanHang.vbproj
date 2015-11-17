@@ -23,7 +23,7 @@
     <OptionExplicit>On</OptionExplicit>
     <OptionStrict>Off</OptionStrict>
     <RootNamespace>QuanLyBanHang</RootNamespace>
-    <StartupObject>QuanLyBanHang.frmMain</StartupObject>
+    <StartupObject>QuanLyBanHang.frmLogin</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
@@ -134,11 +134,6 @@
     <Compile Include="frmBAOCAO.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HOANGDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HOANGDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -168,9 +163,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BanHang2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmBANHANG.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmChangepass.vb">
@@ -209,21 +201,12 @@
     <Compile Include="mdStart.vb">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="Resources\background1.jpg" />
+    <None Include="Resources\background.jpg" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="HOANGDataSet.xsc">
-      <DependentUpon>HOANGDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="HOANGDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>HOANGDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="HOANGDataSet.xss">
-      <DependentUpon>HOANGDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="QuanLyBanHangDataSet1.xsc">
@@ -253,9 +236,6 @@
     <None Include="Resources\login.jpg" />
     <EmbeddedResource Include="BanHang2.resx">
       <DependentUpon>BanHang2.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmBANHANG.resx">
-      <DependentUpon>frmBANHANG.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBAOCAO.resx">
       <DependentUpon>frmBAOCAO.vb</DependentUpon>

@@ -755,7 +755,7 @@ Public Class frmCTXUAT
         For i = 1 To 12
             Me.cbThang.Items.Add(i)
         Next
-        For i = 2000 To 2010
+        For i = 2010 To 2050
             Me.cbNam.Items.Add(i)
         Next
     End Sub

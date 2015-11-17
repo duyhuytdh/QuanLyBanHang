@@ -261,7 +261,7 @@ Public Class frmChangepass
         xpass1 = ""
         Dim string2 = strconn
         Dim sqlconn As SqlConnection = New SqlConnection(string2)
-        Dim strsql As String = "select * from tblPassword where username='" & Encript(Me.txtOlduser.Text, 1981) & "' and password='" & Encript(Me.txtOldpass.Text, 1981) & "' and power='" & power & "'"
+        Dim strsql As String = "select * from tblPassword where username='" & Encript(Me.txtOlduser.Text, 1994) & "' and password='" & Encript(Me.txtOldpass.Text, 1994) & "'"
         Dim sqlcmd As SqlCommand = New SqlCommand(strsql, sqlconn)
         sqlconn.Open()
         Dim sqlreader As SqlDataReader = sqlcmd.ExecuteReader()
@@ -337,12 +337,12 @@ Public Class frmChangepass
         End If
         Dim xuser As String = ""
         Dim xpass As String = ""
-        xuser = Encript(Trim(Me.txtNewuser.Text), 1981)
-        xpass = Encript(Trim(Me.txtNewpass.Text), 1981)
+        xuser = Encript(Trim(Me.txtNewuser.Text), 1994)
+        xpass = Encript(Trim(Me.txtNewpass.Text), 1994)
 
         Dim ok As Boolean = True
         Dim myconn As New SqlConnection(strconn)
-        Dim strupdate = "update tblpassword set username='" & xuser & "',password='" & xpass & "' where username='" & Encript(Trim(Me.txtOlduser.Text), 1981) & "' and password='" & Encript(Trim(Me.txtOldpass.Text), 1981) & "' and power='" & power & "'"
+        Dim strupdate = "update tblpassword set username='" & xuser & "',password='" & xpass & "' where username='" & Encript(Trim(Me.txtOlduser.Text), 1994) & "' and password='" & Encript(Trim(Me.txtOldpass.Text), 1994) & "'"
 
         Dim mysqlcmd As New SqlCommand(strupdate, myconn)
         Try

@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 Public Class frmLogin
     Inherits System.Windows.Forms.Form
 
-    Dim sqlconn As SqlConnection = New SqlConnection("Data Source=DuyHuy-PC\SQLEXPRESS2008R2;Initial Catalog=HOANG;User ID=sa;Password=sa")
+    Dim sqlconn As SqlConnection = New SqlConnection("Data Source=PC\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True")
     
 #Region " Windows Form Designer generated code "
 

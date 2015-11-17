@@ -299,7 +299,7 @@ Public Class frmBAOCAO
                 Next
             Case "Y"
                 Me.cmbYear.Items.Clear()
-                For i = 2004 To 2010
+                For i = 2010 To 2050
                     Me.cmbYear.Items.Add(i)
                 Next
         End Select

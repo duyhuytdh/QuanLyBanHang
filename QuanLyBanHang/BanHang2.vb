@@ -506,7 +506,7 @@ Public Class frmBanHang2
         Else
             xTK = Me.txtTRIETKHAU.Text
         End If
-        str2 = "update tblHDBAN set TONGGIATRI=" & Me.txtTIENSAUTK.Text & ",TRIETKHAU=" & xTK & ",MANV='" & SplitCode() & "' where SOHDBAN='" & Me.txtSOHDBAN.Text & "'"
+        str2 = "update tblHDBAN set TONGGIATRI=" & Me.txtTIENSAUTK.Text & ",TRIETKHAU=" & xTK & " where SOHDBAN='" & Me.txtSOHDBAN.Text & "'"
         Dim mycmd As New SqlCommand(str2, mySQLConnection)
         Try
             mySQLConnection.Open()
@@ -684,7 +684,7 @@ Public Class frmBanHang2
                 Else
                     xTK = Me.txtTRIETKHAU.Text
                 End If
-                str1 = "insert into tblHDBAN(SOHDBAN,NGAYBAN,TONGGIATRI,TRIETKHAU,MANV) values('" & Me.txtSOHDBAN.Text & "',getdate()," & Me.txtTIENSAUTK.Text & ",'" & xTK & "','" & SplitCode() & "')"
+                str1 = "insert into tblHDBAN(SOHDBAN,NGAYBAN,TONGGIATRI,TRIETKHAU) values('" & Me.txtSOHDBAN.Text & "',getdate()," & Me.txtTIENSAUTK.Text & ",'" & xTK & "')"
                 Dim mycmd As New SqlCommand(str1, mySQLConnection)
                 Try
                     mySQLConnection.Open()
@@ -709,7 +709,7 @@ Public Class frmBanHang2
                 Else
                     xTK = Me.txtTRIETKHAU.Text
                 End If
-                str2 = "update tblHDBAN set TONGGIATRI=" & Me.txtTIENSAUTK.Text & ",TRIETKHAU=" & xTK & ",MANV='" & SplitCode() & "' where SOHDBAN='" & Me.txtSOHDBAN.Text & "'"
+                str2 = "update tblHDBAN set TONGGIATRI=" & Me.txtTIENSAUTK.Text & ",TRIETKHAU=" & xTK & "' where SOHDBAN='" & Me.txtSOHDBAN.Text & "'"
                 Dim mycmd As New SqlCommand(str2, mySQLConnection)
                 Try
                     mySQLConnection.Open()

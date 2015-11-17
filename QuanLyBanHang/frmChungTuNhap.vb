@@ -1,9 +1,11 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports System.DateTime
+Imports System.Globalization
 Public Class frmCTNHAP
     Inherits System.Windows.Forms.Form
 
-   
+
 
 #Region " Windows Form Designer generated code "
 
@@ -34,7 +36,6 @@ Public Class frmCTNHAP
     'Do not modify it using the code editor.
     Friend WithEvents Grb1 As System.Windows.Forms.GroupBox
     Friend WithEvents cmdSave As System.Windows.Forms.Button
-    Friend WithEvents cmdNew As System.Windows.Forms.Button
     Friend WithEvents cmdBack As System.Windows.Forms.Button
 
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -133,7 +134,6 @@ Public Class frmCTNHAP
         Me.lbName = New System.Windows.Forms.Label()
         Me.lbID = New System.Windows.Forms.Label()
         Me.cmdSave = New System.Windows.Forms.Button()
-        Me.cmdNew = New System.Windows.Forms.Button()
         Me.cmdBack = New System.Windows.Forms.Button()
         Me.tabCTN = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -200,7 +200,6 @@ Public Class frmCTNHAP
         Me.Grb1.Controls.Add(Me.lbName)
         Me.Grb1.Controls.Add(Me.lbID)
         Me.Grb1.Controls.Add(Me.cmdSave)
-        Me.Grb1.Controls.Add(Me.cmdNew)
         Me.Grb1.Controls.Add(Me.cmdBack)
         Me.Grb1.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Grb1.Location = New System.Drawing.Point(6, 0)
@@ -542,15 +541,6 @@ Public Class frmCTNHAP
         Me.cmdSave.TabIndex = 3
         Me.cmdSave.Text = "&Lưu"
         '
-        'cmdNew
-        '
-        Me.cmdNew.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdNew.Location = New System.Drawing.Point(184, 396)
-        Me.cmdNew.Name = "cmdNew"
-        Me.cmdNew.Size = New System.Drawing.Size(120, 43)
-        Me.cmdNew.TabIndex = 2
-        Me.cmdNew.Text = "&Thêm Chứng Từ Nhập"
-        '
         'cmdBack
         '
         Me.cmdBack.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -741,7 +731,7 @@ Public Class frmCTNHAP
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(172, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(434, 32)
+        Me.Label1.Size = New System.Drawing.Size(474, 32)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Danh Sách Các Hoá Đơn Chứng Từ Nhập"
         '
@@ -819,7 +809,10 @@ Public Class frmCTNHAP
     Dim okThem, okSua As Boolean
     Dim xMA As String
     Dim xGhiMoi As Boolean
-
+    Dim dtngayN As DateTime
+    Dim dtngayT As DateTime
+    Dim strngayN As String
+    Dim strngayT As String
 
     Dim mySQLDataAdapter As New SqlDataAdapter("Select * from tblCTNHAP", mySQLConnection)
 
@@ -970,7 +963,7 @@ Public Class frmCTNHAP
         For i = 1 To 12
             Me.cbThang.Items.Add(i)
         Next
-        For i = 2000 To 2010
+        For i = 2010 To 2050
             Me.cbNam.Items.Add(i)
         Next
 
@@ -1002,7 +995,7 @@ Public Class frmCTNHAP
             SplitCode = xcode
             Exit Function
         End If
-       
+
     End Function
     'Xây dựng thủ tục thực hiện việc đưa dữ liệu vào trong các combobox: MANV,MANCC,MAMH...
     Private Sub fillcombo(ByVal st As String, ByVal obj As String)
@@ -1066,7 +1059,6 @@ Public Class frmCTNHAP
     'nut ghilai cho phep ghi lai khi nhap 1 mat hang cua chung tu nhap moi hoac khi muon
     'cap nhat lai nhung thay doi cua 1 mat hang trong hoa don sua 
     Private Sub cmdSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdSave.Click
-
         If Me.txtNgayN.Text = "" Then
             MessageBox.Show("Bạn Hãy Cho Biết Ngày Nhập Hàng Của Chứng Từ Nhập !.  ", "Xin Chào !", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.txtNgayN.Focus()
@@ -1081,6 +1073,10 @@ Public Class frmCTNHAP
                     MessageBox.Show("Bạn hãy nhập đúng định dạng ngày theo kiểu : Ngày/Tháng/Năm . ", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Me.txtNgayN.Focus()
                     Exit Sub
+                Else
+                    dtngayN = Convert.ToDateTime(Me.txtNgayN.Text)
+                    strngayN = dtngayN.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)
+
                 End If
             End If
         End If
@@ -1096,7 +1092,7 @@ Public Class frmCTNHAP
         End If
         If okSua = True And Me.btnThemMH.Enabled = False Then
             'ghi lai chung tu sau khi sua CTN thanh khong con no gi 
-            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & xMA & "'"
+            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & xMA & "'"
             Dim ook As Boolean = True
             Dim xcmd As New SqlCommand(strcmd, mySQLConnection)
             Try
@@ -1122,7 +1118,7 @@ Public Class frmCTNHAP
         If okSua = True AndAlso Me.txtSL.Text = "" AndAlso Me.txtDONGIA.Text = "" AndAlso Me.txtThanhTien.Text = "" Then
             'chi cap nhat nhung thong tin trong bang CTNHAP
 
-            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
+            Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & dtngayT & "' where SOCTN='" & xMA & "'"
             Dim cmdCTN As New SqlCommand(strcmd, mySQLConnection)
             Dim ok1 As Boolean = True
             Try
@@ -1203,7 +1199,7 @@ Public Class frmCTNHAP
                 'ghi lai thong tin trong truong hop nhap chung tu lan dau  tien
                 'insert,insert,okthem=false
                 cmdNK = New SqlCommand("Insert into tblNHAPKHO(SOCTN,MAMH,SOLUONG,DONGIA) Values('" & UCase(Me.txtSOCTN.Text) & "','" & UCase(SplitCode("MH")) & "','" & Me.txtSL.Text & "','" & Me.txtDONGIA.Text & "')", mySQLConnection)
-                Dim str = "insert into tblCTNHAP(SOCTN,NGAYN,MANCC,TONGGIATRI) values('" & UCase(Me.txtSOCTN.Text) & "','" & Me.txtNgayN.Text & "','" & UCase(SplitCode("NCC")) & "'," & Me.txtTONGTIEN.Text & ")"
+                Dim str = "insert into tblCTNHAP(SOCTN,NGAYN,MANCC,TONGGIATRI) values('" & UCase(Me.txtSOCTN.Text) & "','" & strngayN & "','" & UCase(SplitCode("NCC")) & "'," & Me.txtTONGTIEN.Text & ")"
                 cmdCT = New SqlCommand(str, mySQLConnection)
             Else
                 If checkItem(SplitCode("MH")) = False Then
@@ -1222,13 +1218,13 @@ Public Class frmCTNHAP
                 'cho phep ghi lai thong tin khi ghi lai tu lan thu 2 (nhap MH lan 2)
                 'update,insert
                 cmdNK = New SqlCommand("Insert into tblNHAPKHO(SOCTN,MAMH,SOLUONG,DONGIA) Values('" & UCase(Me.txtSOCTN.Text) & "','" & UCase(SplitCode("MH")) & "','" & Me.txtSL.Text & "','" & Me.txtDONGIA.Text & "')", mySQLConnection)
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
 
             If okSua = True Then 'cho phep ghi lai khi them vaoCTNHAP mat hang moi
                 cmdNK = New SqlCommand("Insert into tblNHAPKHO(SOCTN,MAMH,SOLUONG,DONGIA) Values('" & UCase(Me.txtSOCTN.Text) & "','" & UCase(SplitCode("MH")) & "','" & Me.txtSL.Text & "','" & Me.txtDONGIA.Text & "')", mySQLConnection)
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & dtngayT & "' where SOCTN='" & xMA & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
 
@@ -1242,14 +1238,14 @@ Public Class frmCTNHAP
             If okSua = True And xMA <> "" Then
                 cmdNK = New SqlCommand("update tblNHAPKHO set MAMH='" & SplitCode("MH") & "',SOLUONG=" & Me.txtSL.Text & ",DONGIA=" & Me.txtDONGIA.Text & " where MAMH='" & oMAMH & "' and SOCTN='" & xMA & "'", mySQLConnection)
                 'nut Me.cmdSave.Text = "Cập Nhật"
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & xMA & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & dtngayT & "' where SOCTN='" & xMA & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
 
             If okThem = False And xMA = "" And okSua = False Then
                 cmdNK = New SqlCommand("update tblNHAPKHO set MAMH='" & SplitCode("MH") & "',SOLUONG=" & Me.txtSL.Text & ",DONGIA=" & Me.txtDONGIA.Text & " where MAMH='" & oMAMH & "' and SOCTN='" & Me.txtSOCTN.Text & "'", mySQLConnection)
                 'nut Me.cmdSave.Text = "Cập Nhật"
-                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
+                Dim strcmd = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'"
                 cmdCT = New SqlCommand(strcmd, mySQLConnection)
             End If
         End If
@@ -1326,28 +1322,8 @@ Public Class frmCTNHAP
         Me.btnSua.Enabled = True
 
         Me.btnHuyCTN.Enabled = True
-        Me.cmdNew.Enabled = True
         Me.cmdSave.Enabled = True
         Me.cmdSave.Text = "Lưu"
-    End Sub
-
-    Private Sub cmdNew_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdNew.Click
-        xGhiMoi = False
-        okThem = True 'bien kiem tra : neu no =true thi cho ghi lai lan1 
-        okSua = False
-        xMA = ""
-        blank()
-        Me.txtSOCTN.Enabled = True
-        Me.txtNgayN.Enabled = True
-        Me.CheckBox.Checked = False
-        Me.btnHoanThanh.Enabled = True
-
-        Me.btnHuyCTN.Enabled = True
-        Me.cmdNew.Enabled = True
-        Me.cmdSave.Enabled = True
-        Me.cmdSave.Text = "Lưu"
-        Call fillDgMH(Me.txtSOCTN.Text)
-        Me.txtSOCTN.Focus()
     End Sub
 
     Private Sub cmdBack_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdBack.Click
@@ -1439,6 +1415,7 @@ Public Class frmCTNHAP
                     End If
                 End If
             End If
+            dtngayN = Convert.ToDateTime(Me.txtNgayN.Text)
         End If
     End Sub
 
@@ -1550,6 +1527,7 @@ Public Class frmCTNHAP
             Me.txtThanhTien.Enabled = False
             Me.cmdSave.Focus()
         End If
+
     End Sub
 
     Private Sub txtDATRA_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtDATRA.KeyPress
@@ -1608,6 +1586,7 @@ Public Class frmCTNHAP
                     End If
                 End If
             End If
+            dtngayT = Convert.ToDateTime(Me.txtNgayHenTra.Text)
             Me.btnHoanThanh.Focus()
         End If
     End Sub
@@ -1813,15 +1792,15 @@ Public Class frmCTNHAP
             xtg = dgView.Item(dgView.CurrentCell.RowNumber, 0)
             Me.txtSOCTN.Text = xtg
             Me.txtNgayN.Text = dgView.Item(dgView.CurrentCell.RowNumber, 1)
-            Me.cbNCC.Text = dgView.Item(dgView.CurrentCell.RowNumber, 3)
-            Me.txtTONGTIEN.Text = Me.dgView.Item(dgView.CurrentCell.RowNumber, 4)
-            Dim xTONGTIEN = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 4))
-            Dim xTRA = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 5))
-            Me.txtDATRA.Text = (dgView.Item(dgView.CurrentCell.RowNumber, 5))
-            Me.txtNO.Text = dgView.Item(dgView.CurrentCell.RowNumber, 6)
+            Me.cbNCC.Text = dgView.Item(dgView.CurrentCell.RowNumber, 2)
+            Me.txtTONGTIEN.Text = Me.dgView.Item(dgView.CurrentCell.RowNumber, 3)
+            Dim xTONGTIEN = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 3))
+            Dim xTRA = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 4))
+            Me.txtDATRA.Text = (dgView.Item(dgView.CurrentCell.RowNumber, 4))
+            Me.txtNO.Text = dgView.Item(dgView.CurrentCell.RowNumber, 5)
 
             If xTRA < xTONGTIEN Or Me.txtNO.Text < 0 Then
-                Me.txtNgayHenTra.Text = dgView.Item(dgView.CurrentCell.RowNumber, 7)
+                Me.txtNgayHenTra.Text = dgView.Item(dgView.CurrentCell.RowNumber, 6)
             Else
                 Me.txtNgayHenTra.Text = ""
             End If
@@ -1832,7 +1811,6 @@ Public Class frmCTNHAP
         Me.btnXoaMH.Enabled = True
         Me.btnSua.Enabled = True
         Me.btnHuyCTN.Enabled = True
-        Me.cmdNew.Enabled = True
         Me.cmdSave.Enabled = True
 
 
@@ -1859,15 +1837,15 @@ Public Class frmCTNHAP
         xtg = dgView.Item(dgView.CurrentCell.RowNumber, 0)
         Me.txtSOCTN.Text = xtg
         Me.txtNgayN.Text = dgView.Item(dgView.CurrentCell.RowNumber, 1)
-        Me.cbNCC.Text = dgView.Item(dgView.CurrentCell.RowNumber, 3)
-        Me.txtTONGTIEN.Text = Me.dgView.Item(dgView.CurrentCell.RowNumber, 4)
-        Dim xTONGTIEN = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 4))
-        Dim xTRA = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 5))
-        Me.txtDATRA.Text = (dgView.Item(dgView.CurrentCell.RowNumber, 5))
-        Me.txtNO.Text = dgView.Item(dgView.CurrentCell.RowNumber, 6)
+        Me.cbNCC.Text = dgView.Item(dgView.CurrentCell.RowNumber, 2)
+        Me.txtTONGTIEN.Text = Me.dgView.Item(dgView.CurrentCell.RowNumber, 3)
+        Dim xTONGTIEN = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 3))
+        Dim xTRA = CDec(dgView.Item(dgView.CurrentCell.RowNumber, 4))
+        Me.txtDATRA.Text = (dgView.Item(dgView.CurrentCell.RowNumber, 4))
+        Me.txtNO.Text = dgView.Item(dgView.CurrentCell.RowNumber, 5)
 
         If xTRA <> xTONGTIEN Then
-            Me.txtNgayHenTra.Text = dgView.Item(dgView.CurrentCell.RowNumber, 7)
+            Me.txtNgayHenTra.Text = dgView.Item(dgView.CurrentCell.RowNumber, 6)
         Else
             Me.txtNgayHenTra.Text = ""
         End If
@@ -1877,7 +1855,6 @@ Public Class frmCTNHAP
         Me.btnXoaMH.Enabled = False
         Me.btnSua.Enabled = False
         Me.btnHuyCTN.Enabled = False
-        Me.cmdNew.Enabled = False
         Me.cmdSave.Enabled = False
 
         Me.cmdBack.Focus()
@@ -1916,6 +1893,9 @@ Public Class frmCTNHAP
                     MessageBox.Show("Bạn hãy nhập đúng định dạng ngày theo kiểu : Ngày/Tháng/Năm . ", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Me.txtNgayN.Focus()
                     Exit Sub
+                Else
+                    dtngayN = Convert.ToDateTime(Me.txtNgayN.Text)
+                    strngayN = dtngayN.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)
                 End If
             End If
         End If
@@ -1967,6 +1947,9 @@ Public Class frmCTNHAP
                         MessageBox.Show("Bạn hãy nhập đúng định dạng ngày theo kiểu : Ngày/Tháng/Năm . ", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.txtNgayHenTra.Focus()
                         Exit Sub
+                    Else
+                        dtngayT = Convert.ToDateTime(Me.txtNgayHenTra.Text)
+                        strngayT = dtngayT.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)
                     End If
                 End If
             End If
@@ -1974,8 +1957,8 @@ Public Class frmCTNHAP
         Dim xxok As Boolean = True
         Dim cmdCT As New SqlCommand()
 
-        Dim str1 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & Me.txtSOCTN.Text & "'"
-        Dim str2 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & Me.txtNgayN.Text & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & Me.txtSOCTN.Text & "'"
+        Dim str1 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtTONGTIEN.Text & ",CONNO=0 where SOCTN='" & Me.txtSOCTN.Text & "'"
+        Dim str2 = "update tblCTNHAP set SOCTN='" & UCase(Me.txtSOCTN.Text) & "',NGAYN='" & strngayN & "',MANCC='" & UCase(SplitCode("NCC")) & "',TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & strngayT & "' where SOCTN='" & Me.txtSOCTN.Text & "'"
         If Me.CheckBox.Checked = True Then
             cmdCT = New SqlCommand(str1, mySQLConnection)
         Else
@@ -2047,7 +2030,7 @@ Public Class frmCTNHAP
             End If
             'xoa xong phai cap nhat lai du lieu
             Dim cmdUpdate1 As New SqlCommand("update tblCTNHAP set TONGGIATRI=" & Me.txtTONGTIEN.Text & " where SOCTN='" & Me.txtSOCTN.Text & "'", mySQLConnection)
-            Dim cmdUpdate2 As New SqlCommand("update tblCTNHAP set TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & Me.txtNgayHenTra.Text & "' where SOCTN='" & Me.txtSOCTN.Text & "'", mySQLConnection)
+            Dim cmdUpdate2 As New SqlCommand("update tblCTNHAP set TONGGIATRI=" & Me.txtTONGTIEN.Text & ",DATRA=" & Me.txtDATRA.Text & ",CONNO=" & Me.txtNO.Text & ",NGAYHENTRA='" & dtngayT & "' where SOCTN='" & Me.txtSOCTN.Text & "'", mySQLConnection)
 
             Try
                 mySQLConnection.Open()
