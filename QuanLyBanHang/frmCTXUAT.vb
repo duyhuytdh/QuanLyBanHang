@@ -84,26 +84,6 @@ Public Class frmCTXUAT
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCTXUAT))
         Me.Grb1 = New System.Windows.Forms.GroupBox()
-        Me.Grb2 = New System.Windows.Forms.GroupBox()
-        Me.rAll = New System.Windows.Forms.RadioButton()
-        Me.rMa = New System.Windows.Forms.RadioButton()
-        Me.rNgay = New System.Windows.Forms.RadioButton()
-        Me.txtCTN = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.cbNam = New System.Windows.Forms.ComboBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.cbThang = New System.Windows.Forms.ComboBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.cbNgay = New System.Windows.Forms.ComboBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnChiTiet = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.dgView = New System.Windows.Forms.DataGrid()
-        Me.cmdTimKiem = New System.Windows.Forms.Button()
-        Me.cmdSua = New System.Windows.Forms.Button()
-        Me.cmdDelete = New System.Windows.Forms.Button()
-        Me.cmdClose = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cbMAMH = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -132,13 +112,33 @@ Public Class frmCTXUAT
         Me.cmdSave = New System.Windows.Forms.Button()
         Me.cmdSuaMH = New System.Windows.Forms.Button()
         Me.cmdBack = New System.Windows.Forms.Button()
+        Me.Grb2 = New System.Windows.Forms.GroupBox()
+        Me.rAll = New System.Windows.Forms.RadioButton()
+        Me.rMa = New System.Windows.Forms.RadioButton()
+        Me.rNgay = New System.Windows.Forms.RadioButton()
+        Me.txtCTN = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.cbNam = New System.Windows.Forms.ComboBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.cbThang = New System.Windows.Forms.ComboBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.cbNgay = New System.Windows.Forms.ComboBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnChiTiet = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.dgView = New System.Windows.Forms.DataGrid()
+        Me.cmdTimKiem = New System.Windows.Forms.Button()
+        Me.cmdSua = New System.Windows.Forms.Button()
+        Me.cmdDelete = New System.Windows.Forms.Button()
+        Me.cmdClose = New System.Windows.Forms.Button()
         Me.Grb1.SuspendLayout()
-        Me.Grb2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgCACMH, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Grb2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Grb1
@@ -170,210 +170,6 @@ Public Class frmCTXUAT
         Me.Grb1.Size = New System.Drawing.Size(703, 465)
         Me.Grb1.TabIndex = 4
         Me.Grb1.TabStop = False
-        '
-        'Grb2
-        '
-        Me.Grb2.Controls.Add(Me.rAll)
-        Me.Grb2.Controls.Add(Me.rMa)
-        Me.Grb2.Controls.Add(Me.rNgay)
-        Me.Grb2.Controls.Add(Me.txtCTN)
-        Me.Grb2.Controls.Add(Me.Label17)
-        Me.Grb2.Controls.Add(Me.cbNam)
-        Me.Grb2.Controls.Add(Me.Label16)
-        Me.Grb2.Controls.Add(Me.cbThang)
-        Me.Grb2.Controls.Add(Me.Label15)
-        Me.Grb2.Controls.Add(Me.Label14)
-        Me.Grb2.Controls.Add(Me.cbNgay)
-        Me.Grb2.Controls.Add(Me.PictureBox1)
-        Me.Grb2.Controls.Add(Me.btnChiTiet)
-        Me.Grb2.Controls.Add(Me.Label1)
-        Me.Grb2.Controls.Add(Me.dgView)
-        Me.Grb2.Controls.Add(Me.cmdTimKiem)
-        Me.Grb2.Controls.Add(Me.cmdSua)
-        Me.Grb2.Controls.Add(Me.cmdDelete)
-        Me.Grb2.Controls.Add(Me.cmdClose)
-        Me.Grb2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Grb2.Location = New System.Drawing.Point(12, 20)
-        Me.Grb2.Name = "Grb2"
-        Me.Grb2.Size = New System.Drawing.Size(730, 459)
-        Me.Grb2.TabIndex = 5
-        Me.Grb2.TabStop = False
-        '
-        'rAll
-        '
-        Me.rAll.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rAll.Location = New System.Drawing.Point(324, 118)
-        Me.rAll.Name = "rAll"
-        Me.rAll.Size = New System.Drawing.Size(114, 21)
-        Me.rAll.TabIndex = 33
-        Me.rAll.Text = "Chọn Tất Cả"
-        '
-        'rMa
-        '
-        Me.rMa.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rMa.Location = New System.Drawing.Point(324, 87)
-        Me.rMa.Name = "rMa"
-        Me.rMa.Size = New System.Drawing.Size(133, 23)
-        Me.rMa.TabIndex = 32
-        Me.rMa.Text = "Tìm Theo Mã"
-        '
-        'rNgay
-        '
-        Me.rNgay.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rNgay.Location = New System.Drawing.Point(324, 58)
-        Me.rNgay.Name = "rNgay"
-        Me.rNgay.Size = New System.Drawing.Size(133, 23)
-        Me.rNgay.TabIndex = 31
-        Me.rNgay.Text = "Tìm Theo Ngày"
-        '
-        'txtCTN
-        '
-        Me.txtCTN.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCTN.Location = New System.Drawing.Point(174, 147)
-        Me.txtCTN.Name = "txtCTN"
-        Me.txtCTN.Size = New System.Drawing.Size(250, 23)
-        Me.txtCTN.TabIndex = 30
-        '
-        'Label17
-        '
-        Me.Label17.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(50, 150)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(180, 21)
-        Me.Label17.TabIndex = 29
-        Me.Label17.Text = "Mã Hoá Đơn Bán"
-        '
-        'cbNam
-        '
-        Me.cbNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbNam.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbNam.Location = New System.Drawing.Point(156, 117)
-        Me.cbNam.Name = "cbNam"
-        Me.cbNam.Size = New System.Drawing.Size(73, 24)
-        Me.cbNam.TabIndex = 28
-        '
-        'Label16
-        '
-        Me.Label16.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(50, 119)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(73, 22)
-        Me.Label16.TabIndex = 27
-        Me.Label16.Text = "Năm"
-        '
-        'cbThang
-        '
-        Me.cbThang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbThang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbThang.Location = New System.Drawing.Point(156, 88)
-        Me.cbThang.Name = "cbThang"
-        Me.cbThang.Size = New System.Drawing.Size(74, 24)
-        Me.cbThang.TabIndex = 26
-        '
-        'Label15
-        '
-        Me.Label15.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(50, 90)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(80, 22)
-        Me.Label15.TabIndex = 25
-        Me.Label15.Text = "Tháng"
-        '
-        'Label14
-        '
-        Me.Label14.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(50, 62)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(74, 21)
-        Me.Label14.TabIndex = 24
-        Me.Label14.Text = "Ngày"
-        '
-        'cbNgay
-        '
-        Me.cbNgay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbNgay.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbNgay.Location = New System.Drawing.Point(156, 59)
-        Me.cbNgay.Name = "cbNgay"
-        Me.cbNgay.Size = New System.Drawing.Size(74, 24)
-        Me.cbNgay.TabIndex = 23
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(117, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(31, 31)
-        Me.PictureBox1.TabIndex = 17
-        Me.PictureBox1.TabStop = False
-        '
-        'btnChiTiet
-        '
-        Me.btnChiTiet.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnChiTiet.Location = New System.Drawing.Point(405, 418)
-        Me.btnChiTiet.Name = "btnChiTiet"
-        Me.btnChiTiet.Size = New System.Drawing.Size(121, 26)
-        Me.btnChiTiet.TabIndex = 16
-        Me.btnChiTiet.Text = "Xem Chi Tiết"
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(150, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(368, 30)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Các Hoá Đơn Chứng Từ Bán Hàng"
-        '
-        'dgView
-        '
-        Me.dgView.AlternatingBackColor = System.Drawing.SystemColors.Info
-        Me.dgView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.dgView.CaptionText = "Các Hoá Đơn Chứng Từ Bán Hàng"
-        Me.dgView.DataMember = ""
-        Me.dgView.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgView.GridLineColor = System.Drawing.Color.Maroon
-        Me.dgView.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.dgView.Location = New System.Drawing.Point(2, 194)
-        Me.dgView.Name = "dgView"
-        Me.dgView.Size = New System.Drawing.Size(702, 204)
-        Me.dgView.TabIndex = 14
-        '
-        'cmdTimKiem
-        '
-        Me.cmdTimKiem.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdTimKiem.Location = New System.Drawing.Point(189, 417)
-        Me.cmdTimKiem.Name = "cmdTimKiem"
-        Me.cmdTimKiem.Size = New System.Drawing.Size(80, 27)
-        Me.cmdTimKiem.TabIndex = 13
-        Me.cmdTimKiem.Text = "&Tìm Kiếm"
-        '
-        'cmdSua
-        '
-        Me.cmdSua.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdSua.Location = New System.Drawing.Point(81, 417)
-        Me.cmdSua.Name = "cmdSua"
-        Me.cmdSua.Size = New System.Drawing.Size(80, 27)
-        Me.cmdSua.TabIndex = 12
-        Me.cmdSua.Text = "&Sửa "
-        '
-        'cmdDelete
-        '
-        Me.cmdDelete.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdDelete.Location = New System.Drawing.Point(297, 417)
-        Me.cmdDelete.Name = "cmdDelete"
-        Me.cmdDelete.Size = New System.Drawing.Size(80, 27)
-        Me.cmdDelete.TabIndex = 9
-        Me.cmdDelete.Text = "&Xoá Bỏ"
-        '
-        'cmdClose
-        '
-        Me.cmdClose.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdClose.Location = New System.Drawing.Point(542, 417)
-        Me.cmdClose.Name = "cmdClose"
-        Me.cmdClose.Size = New System.Drawing.Size(79, 27)
-        Me.cmdClose.TabIndex = 11
-        Me.cmdClose.Text = "&Đóng"
         '
         'GroupBox1
         '
@@ -633,6 +429,210 @@ Public Class frmCTXUAT
         Me.cmdBack.TabIndex = 8
         Me.cmdBack.Text = "Quay Lại"
         '
+        'Grb2
+        '
+        Me.Grb2.Controls.Add(Me.rAll)
+        Me.Grb2.Controls.Add(Me.rMa)
+        Me.Grb2.Controls.Add(Me.rNgay)
+        Me.Grb2.Controls.Add(Me.txtCTN)
+        Me.Grb2.Controls.Add(Me.Label17)
+        Me.Grb2.Controls.Add(Me.cbNam)
+        Me.Grb2.Controls.Add(Me.Label16)
+        Me.Grb2.Controls.Add(Me.cbThang)
+        Me.Grb2.Controls.Add(Me.Label15)
+        Me.Grb2.Controls.Add(Me.Label14)
+        Me.Grb2.Controls.Add(Me.cbNgay)
+        Me.Grb2.Controls.Add(Me.PictureBox1)
+        Me.Grb2.Controls.Add(Me.btnChiTiet)
+        Me.Grb2.Controls.Add(Me.Label1)
+        Me.Grb2.Controls.Add(Me.dgView)
+        Me.Grb2.Controls.Add(Me.cmdTimKiem)
+        Me.Grb2.Controls.Add(Me.cmdSua)
+        Me.Grb2.Controls.Add(Me.cmdDelete)
+        Me.Grb2.Controls.Add(Me.cmdClose)
+        Me.Grb2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Grb2.Location = New System.Drawing.Point(12, 20)
+        Me.Grb2.Name = "Grb2"
+        Me.Grb2.Size = New System.Drawing.Size(730, 459)
+        Me.Grb2.TabIndex = 5
+        Me.Grb2.TabStop = False
+        '
+        'rAll
+        '
+        Me.rAll.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rAll.Location = New System.Drawing.Point(324, 118)
+        Me.rAll.Name = "rAll"
+        Me.rAll.Size = New System.Drawing.Size(114, 21)
+        Me.rAll.TabIndex = 33
+        Me.rAll.Text = "Chọn Tất Cả"
+        '
+        'rMa
+        '
+        Me.rMa.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rMa.Location = New System.Drawing.Point(324, 87)
+        Me.rMa.Name = "rMa"
+        Me.rMa.Size = New System.Drawing.Size(133, 23)
+        Me.rMa.TabIndex = 32
+        Me.rMa.Text = "Tìm Theo Mã"
+        '
+        'rNgay
+        '
+        Me.rNgay.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rNgay.Location = New System.Drawing.Point(324, 58)
+        Me.rNgay.Name = "rNgay"
+        Me.rNgay.Size = New System.Drawing.Size(133, 23)
+        Me.rNgay.TabIndex = 31
+        Me.rNgay.Text = "Tìm Theo Ngày"
+        '
+        'txtCTN
+        '
+        Me.txtCTN.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCTN.Location = New System.Drawing.Point(174, 147)
+        Me.txtCTN.Name = "txtCTN"
+        Me.txtCTN.Size = New System.Drawing.Size(250, 23)
+        Me.txtCTN.TabIndex = 30
+        '
+        'Label17
+        '
+        Me.Label17.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(50, 150)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(180, 21)
+        Me.Label17.TabIndex = 29
+        Me.Label17.Text = "Số Hoá Đơn Bán"
+        '
+        'cbNam
+        '
+        Me.cbNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbNam.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbNam.Location = New System.Drawing.Point(156, 117)
+        Me.cbNam.Name = "cbNam"
+        Me.cbNam.Size = New System.Drawing.Size(73, 24)
+        Me.cbNam.TabIndex = 28
+        '
+        'Label16
+        '
+        Me.Label16.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(50, 119)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(73, 22)
+        Me.Label16.TabIndex = 27
+        Me.Label16.Text = "Năm"
+        '
+        'cbThang
+        '
+        Me.cbThang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbThang.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbThang.Location = New System.Drawing.Point(156, 88)
+        Me.cbThang.Name = "cbThang"
+        Me.cbThang.Size = New System.Drawing.Size(74, 24)
+        Me.cbThang.TabIndex = 26
+        '
+        'Label15
+        '
+        Me.Label15.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(50, 90)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(80, 22)
+        Me.Label15.TabIndex = 25
+        Me.Label15.Text = "Tháng"
+        '
+        'Label14
+        '
+        Me.Label14.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(50, 62)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(74, 21)
+        Me.Label14.TabIndex = 24
+        Me.Label14.Text = "Ngày"
+        '
+        'cbNgay
+        '
+        Me.cbNgay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbNgay.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbNgay.Location = New System.Drawing.Point(156, 59)
+        Me.cbNgay.Name = "cbNgay"
+        Me.cbNgay.Size = New System.Drawing.Size(74, 24)
+        Me.cbNgay.TabIndex = 23
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(117, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(31, 31)
+        Me.PictureBox1.TabIndex = 17
+        Me.PictureBox1.TabStop = False
+        '
+        'btnChiTiet
+        '
+        Me.btnChiTiet.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnChiTiet.Location = New System.Drawing.Point(405, 418)
+        Me.btnChiTiet.Name = "btnChiTiet"
+        Me.btnChiTiet.Size = New System.Drawing.Size(121, 26)
+        Me.btnChiTiet.TabIndex = 16
+        Me.btnChiTiet.Text = "Xem Chi Tiết"
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(150, 12)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(368, 30)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Các Hoá Đơn Chứng Từ Bán Hàng"
+        '
+        'dgView
+        '
+        Me.dgView.AlternatingBackColor = System.Drawing.SystemColors.Info
+        Me.dgView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.dgView.CaptionText = "Các Hoá Đơn Chứng Từ Bán Hàng"
+        Me.dgView.DataMember = ""
+        Me.dgView.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgView.GridLineColor = System.Drawing.Color.Maroon
+        Me.dgView.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.dgView.Location = New System.Drawing.Point(2, 194)
+        Me.dgView.Name = "dgView"
+        Me.dgView.Size = New System.Drawing.Size(702, 204)
+        Me.dgView.TabIndex = 14
+        '
+        'cmdTimKiem
+        '
+        Me.cmdTimKiem.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdTimKiem.Location = New System.Drawing.Point(189, 417)
+        Me.cmdTimKiem.Name = "cmdTimKiem"
+        Me.cmdTimKiem.Size = New System.Drawing.Size(80, 27)
+        Me.cmdTimKiem.TabIndex = 13
+        Me.cmdTimKiem.Text = "&Tìm Kiếm"
+        '
+        'cmdSua
+        '
+        Me.cmdSua.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdSua.Location = New System.Drawing.Point(81, 417)
+        Me.cmdSua.Name = "cmdSua"
+        Me.cmdSua.Size = New System.Drawing.Size(80, 27)
+        Me.cmdSua.TabIndex = 12
+        Me.cmdSua.Text = "&Sửa "
+        '
+        'cmdDelete
+        '
+        Me.cmdDelete.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdDelete.Location = New System.Drawing.Point(297, 417)
+        Me.cmdDelete.Name = "cmdDelete"
+        Me.cmdDelete.Size = New System.Drawing.Size(80, 27)
+        Me.cmdDelete.TabIndex = 9
+        Me.cmdDelete.Text = "&Xoá Bỏ"
+        '
+        'cmdClose
+        '
+        Me.cmdClose.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdClose.Location = New System.Drawing.Point(542, 417)
+        Me.cmdClose.Name = "cmdClose"
+        Me.cmdClose.Size = New System.Drawing.Size(79, 27)
+        Me.cmdClose.TabIndex = 11
+        Me.cmdClose.Text = "&Đóng"
+        '
         'frmCTXUAT
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(6, 16)
@@ -647,14 +647,14 @@ Public Class frmCTXUAT
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Grb1.ResumeLayout(False)
         Me.Grb1.PerformLayout()
-        Me.Grb2.ResumeLayout(False)
-        Me.Grb2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgCACMH, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Grb2.ResumeLayout(False)
+        Me.Grb2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

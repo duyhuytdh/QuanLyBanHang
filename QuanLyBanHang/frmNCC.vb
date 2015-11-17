@@ -115,9 +115,9 @@ Public Class frmNCC
         Me.Grb1.Controls.Add(Me.cmdNew)
         Me.Grb1.Controls.Add(Me.cmdBack)
         Me.Grb1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Grb1.Location = New System.Drawing.Point(0, 12)
+        Me.Grb1.Location = New System.Drawing.Point(49, 21)
         Me.Grb1.Name = "Grb1"
-        Me.Grb1.Size = New System.Drawing.Size(916, 482)
+        Me.Grb1.Size = New System.Drawing.Size(720, 400)
         Me.Grb1.TabIndex = 4
         Me.Grb1.TabStop = False
         '
@@ -131,18 +131,18 @@ Public Class frmNCC
         Me.Grb2.Controls.Add(Me.cmdDelete)
         Me.Grb2.Controls.Add(Me.cmdClose)
         Me.Grb2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Grb2.Location = New System.Drawing.Point(0, 16)
+        Me.Grb2.Location = New System.Drawing.Point(0, 9)
         Me.Grb2.Name = "Grb2"
-        Me.Grb2.Size = New System.Drawing.Size(916, 473)
+        Me.Grb2.Size = New System.Drawing.Size(720, 400)
         Me.Grb2.TabIndex = 5
         Me.Grb2.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(170, 22)
+        Me.PictureBox1.Location = New System.Drawing.Point(132, 18)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(50, 50)
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 40)
         Me.PictureBox1.TabIndex = 16
         Me.PictureBox1.TabStop = False
         '
@@ -150,9 +150,9 @@ Public Class frmNCC
         '
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(226, 30)
+        Me.Label5.Location = New System.Drawing.Point(176, 24)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(566, 40)
+        Me.Label5.Size = New System.Drawing.Size(440, 32)
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Danh Sách Các Nhà Cung Cấp Hàng"
         '
@@ -164,121 +164,121 @@ Public Class frmNCC
         Me.dgView.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dgView.GridLineColor = System.Drawing.Color.Maroon
         Me.dgView.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.dgView.Location = New System.Drawing.Point(0, 90)
+        Me.dgView.Location = New System.Drawing.Point(21, 82)
         Me.dgView.Name = "dgView"
-        Me.dgView.Size = New System.Drawing.Size(915, 310)
+        Me.dgView.Size = New System.Drawing.Size(683, 248)
         Me.dgView.TabIndex = 14
         '
         'cmdUpdate
         '
         Me.cmdUpdate.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdUpdate.Location = New System.Drawing.Point(332, 427)
+        Me.cmdUpdate.Location = New System.Drawing.Point(258, 342)
         Me.cmdUpdate.Name = "cmdUpdate"
-        Me.cmdUpdate.Size = New System.Drawing.Size(113, 30)
+        Me.cmdUpdate.Size = New System.Drawing.Size(88, 24)
         Me.cmdUpdate.TabIndex = 13
         Me.cmdUpdate.Text = "&Sửa "
         '
         'cmdNew1
         '
         Me.cmdNew1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdNew1.Location = New System.Drawing.Point(168, 427)
+        Me.cmdNew1.Location = New System.Drawing.Point(131, 342)
         Me.cmdNew1.Name = "cmdNew1"
-        Me.cmdNew1.Size = New System.Drawing.Size(113, 30)
+        Me.cmdNew1.Size = New System.Drawing.Size(88, 24)
         Me.cmdNew1.TabIndex = 12
         Me.cmdNew1.Text = "&Thêm"
         '
         'cmdDelete
         '
         Me.cmdDelete.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdDelete.Location = New System.Drawing.Point(487, 427)
+        Me.cmdDelete.Location = New System.Drawing.Point(379, 342)
         Me.cmdDelete.Name = "cmdDelete"
-        Me.cmdDelete.Size = New System.Drawing.Size(113, 30)
+        Me.cmdDelete.Size = New System.Drawing.Size(88, 24)
         Me.cmdDelete.TabIndex = 9
         Me.cmdDelete.Text = "&Xoá "
         '
         'cmdClose
         '
         Me.cmdClose.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdClose.Location = New System.Drawing.Point(641, 427)
+        Me.cmdClose.Location = New System.Drawing.Point(499, 342)
         Me.cmdClose.Name = "cmdClose"
-        Me.cmdClose.Size = New System.Drawing.Size(113, 30)
+        Me.cmdClose.Size = New System.Drawing.Size(87, 24)
         Me.cmdClose.TabIndex = 11
         Me.cmdClose.Text = "&Đóng"
         '
         'btnDong
         '
-        Me.btnDong.Location = New System.Drawing.Point(679, 414)
+        Me.btnDong.Location = New System.Drawing.Point(528, 331)
         Me.btnDong.Name = "btnDong"
-        Me.btnDong.Size = New System.Drawing.Size(113, 29)
+        Me.btnDong.Size = New System.Drawing.Size(88, 23)
         Me.btnDong.TabIndex = 21
         Me.btnDong.Text = "Đóng"
         '
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(81, 50)
+        Me.PictureBox4.Location = New System.Drawing.Point(63, 40)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(21, 30)
+        Me.PictureBox4.Size = New System.Drawing.Size(16, 24)
         Me.PictureBox4.TabIndex = 20
         Me.PictureBox4.TabStop = False
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(102, 27)
+        Me.PictureBox2.Location = New System.Drawing.Point(79, 22)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(54, 53)
+        Me.PictureBox2.Size = New System.Drawing.Size(42, 42)
         Me.PictureBox2.TabIndex = 19
         Me.PictureBox2.TabStop = False
         '
         'txtFAX
         '
         Me.txtFAX.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFAX.Location = New System.Drawing.Point(262, 352)
+        Me.txtFAX.Location = New System.Drawing.Point(204, 282)
         Me.txtFAX.Name = "txtFAX"
-        Me.txtFAX.Size = New System.Drawing.Size(299, 27)
+        Me.txtFAX.Size = New System.Drawing.Size(232, 23)
         Me.txtFAX.TabIndex = 18
         '
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(81, 355)
+        Me.Label4.Location = New System.Drawing.Point(63, 284)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 29)
+        Me.Label4.Size = New System.Drawing.Size(72, 23)
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Số FAX"
         '
         'txtTEL
         '
         Me.txtTEL.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTEL.Location = New System.Drawing.Point(262, 289)
+        Me.txtTEL.Location = New System.Drawing.Point(204, 231)
         Me.txtTEL.Name = "txtTEL"
-        Me.txtTEL.Size = New System.Drawing.Size(299, 27)
+        Me.txtTEL.Size = New System.Drawing.Size(232, 23)
         Me.txtTEL.TabIndex = 16
         '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(81, 289)
+        Me.Label3.Location = New System.Drawing.Point(63, 231)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(129, 29)
+        Me.Label3.Size = New System.Drawing.Size(100, 23)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Số Điện Thoại"
         '
         'txtDIACHI
         '
         Me.txtDIACHI.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDIACHI.Location = New System.Drawing.Point(262, 226)
+        Me.txtDIACHI.Location = New System.Drawing.Point(204, 181)
         Me.txtDIACHI.Name = "txtDIACHI"
-        Me.txtDIACHI.Size = New System.Drawing.Size(576, 27)
+        Me.txtDIACHI.Size = New System.Drawing.Size(448, 23)
         Me.txtDIACHI.TabIndex = 14
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(81, 224)
+        Me.Label2.Location = New System.Drawing.Point(63, 179)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 29)
+        Me.Label2.Size = New System.Drawing.Size(64, 23)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Địa Chỉ"
         '
@@ -286,76 +286,76 @@ Public Class frmNCC
         '
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(157, 36)
+        Me.Label1.Location = New System.Drawing.Point(122, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(668, 40)
+        Me.Label1.Size = New System.Drawing.Size(520, 32)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Những Thông Tin Chính Về Nhà Cung Cấp Mới"
         '
         'txtTENNCC
         '
         Me.txtTENNCC.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTENNCC.Location = New System.Drawing.Point(262, 163)
+        Me.txtTENNCC.Location = New System.Drawing.Point(204, 130)
         Me.txtTENNCC.Name = "txtTENNCC"
-        Me.txtTENNCC.Size = New System.Drawing.Size(576, 27)
+        Me.txtTENNCC.Size = New System.Drawing.Size(448, 23)
         Me.txtTENNCC.TabIndex = 11
         '
         'txtMANCC
         '
         Me.txtMANCC.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMANCC.Location = New System.Drawing.Point(262, 100)
+        Me.txtMANCC.Location = New System.Drawing.Point(204, 80)
         Me.txtMANCC.Name = "txtMANCC"
-        Me.txtMANCC.Size = New System.Drawing.Size(299, 27)
+        Me.txtMANCC.Size = New System.Drawing.Size(232, 23)
         Me.txtMANCC.TabIndex = 10
         '
         'lbName
         '
         Me.lbName.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbName.Location = New System.Drawing.Point(82, 166)
+        Me.lbName.Location = New System.Drawing.Point(64, 133)
         Me.lbName.Name = "lbName"
-        Me.lbName.Size = New System.Drawing.Size(175, 20)
+        Me.lbName.Size = New System.Drawing.Size(136, 16)
         Me.lbName.TabIndex = 8
         Me.lbName.Text = "Tên Nhà Cung Cấp"
         '
         'lbID
         '
         Me.lbID.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbID.Location = New System.Drawing.Point(81, 105)
+        Me.lbID.Location = New System.Drawing.Point(63, 84)
         Me.lbID.Name = "lbID"
-        Me.lbID.Size = New System.Drawing.Size(165, 20)
+        Me.lbID.Size = New System.Drawing.Size(128, 16)
         Me.lbID.TabIndex = 7
         Me.lbID.Text = "Mã Nhà Cung Cấp"
         '
         'cmdSave
         '
         Me.cmdSave.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdSave.Location = New System.Drawing.Point(319, 414)
+        Me.cmdSave.Location = New System.Drawing.Point(248, 331)
         Me.cmdSave.Name = "cmdSave"
-        Me.cmdSave.Size = New System.Drawing.Size(123, 30)
+        Me.cmdSave.Size = New System.Drawing.Size(96, 24)
         Me.cmdSave.TabIndex = 3
         Me.cmdSave.Text = "&Lưu"
         '
         'cmdNew
         '
         Me.cmdNew.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdNew.Location = New System.Drawing.Point(123, 414)
+        Me.cmdNew.Location = New System.Drawing.Point(96, 331)
         Me.cmdNew.Name = "cmdNew"
-        Me.cmdNew.Size = New System.Drawing.Size(134, 30)
+        Me.cmdNew.Size = New System.Drawing.Size(104, 24)
         Me.cmdNew.TabIndex = 2
         Me.cmdNew.Text = "&Thêm"
         '
         'cmdBack
         '
         Me.cmdBack.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdBack.Location = New System.Drawing.Point(504, 414)
+        Me.cmdBack.Location = New System.Drawing.Point(392, 331)
         Me.cmdBack.Name = "cmdBack"
-        Me.cmdBack.Size = New System.Drawing.Size(123, 30)
+        Me.cmdBack.Size = New System.Drawing.Size(96, 24)
         Me.cmdBack.TabIndex = 8
         Me.cmdBack.Text = "&Quay Lại"
         '
         'frmNCC
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(9, 20)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(7, 16)
         Me.ClientSize = New System.Drawing.Size(915, 504)
         Me.Controls.Add(Me.Grb1)
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

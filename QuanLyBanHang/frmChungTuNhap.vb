@@ -202,7 +202,7 @@ Public Class frmCTNHAP
         Me.Grb1.Controls.Add(Me.cmdSave)
         Me.Grb1.Controls.Add(Me.cmdBack)
         Me.Grb1.Font = New System.Drawing.Font("Times New Roman", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Grb1.Location = New System.Drawing.Point(6, 0)
+        Me.Grb1.Location = New System.Drawing.Point(0, 0)
         Me.Grb1.Name = "Grb1"
         Me.Grb1.Size = New System.Drawing.Size(776, 451)
         Me.Grb1.TabIndex = 4
@@ -660,7 +660,7 @@ Public Class frmCTNHAP
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(136, 23)
         Me.Label17.TabIndex = 23
-        Me.Label17.Text = "Mã Chứng Từ Nhập"
+        Me.Label17.Text = "Số Chứng Từ Nhập"
         '
         'cbNam
         '

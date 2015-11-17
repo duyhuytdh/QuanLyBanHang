@@ -709,7 +709,7 @@ Public Class frmBanHang2
                 Else
                     xTK = Me.txtTRIETKHAU.Text
                 End If
-                str2 = "update tblHDBAN set TONGGIATRI=" & Me.txtTIENSAUTK.Text & ",TRIETKHAU=" & xTK & "' where SOHDBAN='" & Me.txtSOHDBAN.Text & "'"
+                str2 = "update tblHDBAN set TONGGIATRI=" & Me.txtTIENSAUTK.Text & ",TRIETKHAU=" & xTK & " where SOHDBAN='" & Me.txtSOHDBAN.Text & "'"
                 Dim mycmd As New SqlCommand(str2, mySQLConnection)
                 Try
                     mySQLConnection.Open()

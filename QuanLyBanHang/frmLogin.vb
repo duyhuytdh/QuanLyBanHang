@@ -58,9 +58,9 @@ Public Class frmLogin
         '
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(106, 14)
+        Me.Label1.Location = New System.Drawing.Point(88, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(293, 37)
+        Me.Label1.Size = New System.Drawing.Size(244, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Đăng Nhập Hệ Thống"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -68,56 +68,56 @@ Public Class frmLogin
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(48, 70)
+        Me.Label2.Location = New System.Drawing.Point(40, 61)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 27)
+        Me.Label2.Size = New System.Drawing.Size(117, 23)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Tên Đăng Nhập"
         '
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(193, 66)
+        Me.txtUser.Location = New System.Drawing.Point(161, 57)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(240, 26)
+        Me.txtUser.Size = New System.Drawing.Size(200, 22)
         Me.txtUser.TabIndex = 6
         Me.txtUser.Text = "huong"
         '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(51, 110)
+        Me.Label3.Location = New System.Drawing.Point(42, 95)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(96, 27)
+        Me.Label3.Size = New System.Drawing.Size(80, 24)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Mật Khẩu"
         '
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(193, 107)
+        Me.txtPassword.Location = New System.Drawing.Point(161, 93)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(240, 26)
+        Me.txtPassword.Size = New System.Drawing.Size(200, 22)
         Me.txtPassword.TabIndex = 7
-        Me.txtPassword.Text = "123456"
+        Me.txtPassword.Text = "12345"
         '
         'btnlogin
         '
         Me.btnlogin.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnlogin.Location = New System.Drawing.Point(118, 155)
+        Me.btnlogin.Location = New System.Drawing.Point(98, 134)
         Me.btnlogin.Name = "btnlogin"
-        Me.btnlogin.Size = New System.Drawing.Size(128, 35)
+        Me.btnlogin.Size = New System.Drawing.Size(107, 31)
         Me.btnlogin.TabIndex = 11
         Me.btnlogin.Text = "Đăng Nhập"
         '
         'btnThoat
         '
         Me.btnThoat.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnThoat.Location = New System.Drawing.Point(267, 155)
+        Me.btnThoat.Location = New System.Drawing.Point(222, 134)
         Me.btnThoat.Name = "btnThoat"
-        Me.btnThoat.Size = New System.Drawing.Size(129, 35)
+        Me.btnThoat.Size = New System.Drawing.Size(108, 31)
         Me.btnThoat.TabIndex = 12
         Me.btnThoat.Text = "Thoát"
         '
@@ -128,7 +128,7 @@ Public Class frmLogin
         '
         'frmLogin
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.ClientSize = New System.Drawing.Size(504, 219)
         Me.Controls.Add(Me.btnThoat)
         Me.Controls.Add(Me.btnlogin)
